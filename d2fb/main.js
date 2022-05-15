@@ -1156,39 +1156,11 @@ function sfprolog2json (fb) {
     fs.writeFileSync( 'tempfb.pl', fb);
 
     var _result = execSync ("swipl -l 'rfb.pl' -g 'exec,halt.'");
-    
-    // exec("swipl -l 'rfb.pl' -g 'exec,halt.'", (error, stdout, stderr) => {
-    // 	if (error) {
-    //         console.error(`error: ${error.message}`);
-    //         return;
-    // 	}
-    // 	if (stderr) {
-    //         console.error(`stderr: ${stderr}`);
-    //         return;
-    // 	}
-    // 	console.error (stdout);
-    // });
-
-    console.error ("done execSync sfprolog2json");
-    console.error (_result.toString ());
-    
-    return _result.toString ();
-//    return "<wait>";
+    console.log (_result.toString ());
 }
+
 function sfkinds (fb) {
     console.error ('kinds');
-    // fs.writeFileSync ("fb.pl", fb);
-    // exec("swipl -l 'kinds.pl' -g 'query,halt.'", (error, stdout, stderr) => {
-    // 	if (error) {
-    //         console.error(`error: ${error.message}`);
-    //         return;
-    // 	}
-    // 	if (stderr) {
-    //         console.error(`stderr: ${stderr}`);
-    //         return;
-    // 	}
-    // 	console.error(stdout);
-    // return fb;
 }
 
 function sfnames (fb) {
