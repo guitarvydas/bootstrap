@@ -73,7 +73,18 @@
       "inputs": ["in" ],
       "name":"finish",
       "outputs": [],
-      "synccode":"console.log (message.data);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+      "synccode":"console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_49",
+      "inputs": ["in" ],
+      "name":"prolog convert to json",
+      "outputs": ["out" ],
+      "synccode":"var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ],
   [
@@ -86,6 +97,7 @@
 	"deleteTrailingSugar",
 	"kickStart",
 	"finish",
+	"prolog convert to json",
 	"styleexpander",
 	"uncompress"
       ],
