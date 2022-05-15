@@ -71,7 +71,18 @@ function sfprolog2json (fb) {
 }
 function sfkinds (fb) {
     console.error ('kinds');
-    return fb;
+    // fs.writeFileSync ("fb.pl", fb);
+    // exec("swipl -l 'kinds.pl' -g 'query,halt.'", (error, stdout, stderr) => {
+    // 	if (error) {
+    //         console.error(`error: ${error.message}`);
+    //         return;
+    // 	}
+    // 	if (stderr) {
+    //         console.error(`stderr: ${stderr}`);
+    //         return;
+    // 	}
+    // 	console.error(stdout);
+    // return fb;
 }
 
 function sfnames (fb) {
