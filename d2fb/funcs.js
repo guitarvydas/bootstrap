@@ -115,7 +115,7 @@ function sfedgecontainment (fb) {
     return fb;
 }
 
-function sfsyncode (fb) {
+function sfsynccode (fb) {
     console.error ('sync code');
     return fb;
 }
@@ -131,5 +131,5 @@ function sfdesignruleedgecontainment (fb) {
 }
 
 function done () {
-    console.error ('done');
+    console.error ('whole done');
 }

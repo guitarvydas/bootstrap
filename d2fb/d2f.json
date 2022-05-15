@@ -3,6 +3,28 @@
     {
       "children": [],
       "connections": [],
+      "id":"cell_104",
+      "inputs": ["in" ],
+      "name":"connections",
+      "outputs": ["out" ],
+      "synccode":"var x = sfconnections (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_109",
+      "inputs": ["in" ],
+      "name":"design rule edge containment",
+      "outputs": ["out" ],
+      "synccode":"var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
       "id":"cell_13",
       "inputs": ["in" ],
       "name":"diagramparser",
@@ -71,9 +93,9 @@
       "connections": [],
       "id":"cell_46",
       "inputs": ["in" ],
-      "name":"finish",
-      "outputs": [],
-      "synccode":"console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+      "name":"prolog convert to json",
+      "outputs": ["out" ],
+      "synccode":"var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ],
   [
@@ -82,29 +104,75 @@
       "connections": [],
       "id":"cell_49",
       "inputs": ["in" ],
-      "name":"prolog convert to json",
+      "name":"finish",
+      "outputs": [],
+      "synccode":"// console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_54",
+      "inputs": ["in" ],
+      "name":"kinds",
       "outputs": ["out" ],
-      "synccode":"var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+      "synccode":"var x = sfkinds (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_59",
+      "inputs": ["in" ],
+      "name":"name",
+      "outputs": ["out" ],
+      "synccode":"var x = sfnames (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ],
   [
     {
       "children": [
+	"connections",
+	"design rule edge containment",
 	"diagramparser",
 	"asfactbase",
 	"deleteblanklines",
 	"sortForPROLOG",
 	"deleteTrailingSugar",
 	"kickStart",
-	"finish",
 	"prolog convert to json",
+	"finish",
+	"kinds",
+	"name",
+	"color",
+	"boundingbox",
 	"styleexpander",
-	"uncompress"
+	"direction",
+	"contains",
+	"uncompress",
+	"contains port",
+	"direct containment",
+	"edge containment",
+	"sync code"
       ],
       "connections": [
 	{
 	  "receivers": [ {"receiver": {"component":"diagramparser", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"uncompress", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"connections", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"sync code", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"design rule edge containment", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"connections", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"design rule edge containment", "port":"out"}} ]
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"styleexpander", "port":"in"}} ],
@@ -131,15 +199,77 @@
 	  "senders": [ {"sender": {"component":"kickStart", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"finish", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"kinds", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"deleteTrailingSugar", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"finish", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"prolog convert to json", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"name", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"kinds", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"color", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"name", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"boundingbox", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"color", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"direction", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"boundingbox", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"contains", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"direction", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"contains port", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"contains", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"direct containment", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"contains port", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"edge containment", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"direct containment", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"sync code", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"edge containment", "port":"out"}} ]
 	}
       ],
       "id":"cell_6",
       "inputs": [],
-      "name":"bootstrap",
+      "name":"whole",
       "outputs": [],
       "synccode":""
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_64",
+      "inputs": ["in" ],
+      "name":"color",
+      "outputs": ["out" ],
+      "synccode":"var x = sfcolor (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_69",
+      "inputs": ["in" ],
+      "name":"boundingbox",
+      "outputs": ["out" ],
+      "synccode":"var x = sfboundingbox (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ],
   [
@@ -157,11 +287,77 @@
     {
       "children": [],
       "connections": [],
+      "id":"cell_74",
+      "inputs": ["in" ],
+      "name":"direction",
+      "outputs": ["out" ],
+      "synccode":"var x = sfdirection (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_79",
+      "inputs": ["in" ],
+      "name":"contains",
+      "outputs": ["out" ],
+      "synccode":"var x = sfcontains (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
       "id":"cell_8",
       "inputs": ["in" ],
       "name":"uncompress",
       "outputs": ["out" ],
       "synccode":"var u = sfuncompress (message.data);&lt;br&gt;me.send (&quot;out&quot;, u, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_84",
+      "inputs": ["in" ],
+      "name":"contains port",
+      "outputs": ["out" ],
+      "synccode":"var x = sfcontainsport (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_89",
+      "inputs": ["in" ],
+      "name":"direct containment",
+      "outputs": ["out" ],
+      "synccode":"var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_94",
+      "inputs": ["in" ],
+      "name":"edge containment",
+      "outputs": ["out" ],
+      "synccode":"var x = sfedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_99",
+      "inputs": ["in" ],
+      "name":"sync code",
+      "outputs": ["out" ],
+      "synccode":"var x = sfsynccode (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ]
 ]
