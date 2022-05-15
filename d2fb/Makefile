@@ -30,3 +30,4 @@ main.js: pre.js cos.js d2f.js funcs.js post.js parser.js
 
 clean:
 	rm -f d2f.json d2f.js main.js
+	(cd boot/das2json ; make clean)

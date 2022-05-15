@@ -188,15 +188,15 @@ function finish (container, instancename) {
 
 
 
-var bootstrap_signature = {
-    name: "bootstrap",
+var d2f_signature = {
+    name: "d2f",
     inputs: [],
     outputs: []
 }
 
 
 
-function bootstrap_makechildren (container) {
+function d2f_makechildren (container) {
       var child1 = new diagramparser (container, "diagramparser");
         var child2 = new asfactbase (container, "asfactbase");
         var child3 = new deleteblanklines (container, "deleteblanklines");
@@ -210,7 +210,7 @@ function bootstrap_makechildren (container) {
       return children;
 }
 
-function bootstrap_makeconnections (container) {
+function d2f_makeconnections (container) {
     var conn10 = {sender:{name: "uncompress", etag: "out"}, net: "NIY", receivers:  [{name: "diagramparser", etag: "in"}] };
     var conn11 = {sender:{name: "diagramparser", etag: "out"}, net: "NIY", receivers:  [{name: "styleexpander", etag: "in"}] };
     var conn12 = {sender:{name: "styleexpander", etag: "out"}, net: "NIY", receivers:  [{name: "asfactbase", etag: "in"}] };
@@ -223,12 +223,12 @@ function bootstrap_makeconnections (container) {
     return connections;
 }
 
-function bootstrap_makenets (container) {
+function d2f_makenets (container) {
     return [];
 }
 
-var bootstrap_protoImplementation = {
-    name: "bootstrap",
+var d2f_protoImplementation = {
+    name: "d2f",
     kind: "container",
     begin: function () {},
     finish: function () {},
@@ -237,11 +237,11 @@ var bootstrap_protoImplementation = {
     }
 }
 
-function bootstrap (container, instancename) {
-    let me = new Container (bootstrap_signature, bootstrap_protoImplementation, container, instancename);
-    me.children = bootstrap_makechildren (me);
-    me.connections = bootstrap_makeconnections (me);
-    me.nets =  bootstrap_makenets (me);
+function d2f (container, instancename) {
+    let me = new Container (d2f_signature, d2f_protoImplementation, container, instancename);
+    me.children = d2f_makechildren (me);
+    me.connections = d2f_makeconnections (me);
+    me.nets =  d2f_makenets (me);
     me.deliver_input_from_container_input_to_child_input = deliver_input_from_container_input_to_child_input;
     me.deliver_input_from_container_input_to_me_output = deliver_input_from_container_input_to_me_output;
     return me;
