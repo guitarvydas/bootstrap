@@ -3,7 +3,7 @@
 function main () {
     // don't edit this, edit post.js instead
     argv = require('yargs/yargs')(process.argv.slice(2)).argv;
-    var d = new d2f (null, "d2f top");
+    var d = new bootstrap (null, "d2f top");
     var kstart = d.lookupChild ("kickStart");
     kstart.handler (kstart, null);
     kstart.container.wakeup ();
