@@ -85,7 +85,7 @@ function sfkinds (fb) {
 
 function sfnames (fb) {
     console.error ('names');
-    return fb;
+    return queryAndExtendFB (fb, 'layername_query.bash');
 }
 
 function sfcolor (fb) {
