@@ -1,3 +1,4 @@
+const queryDirectory = "/Users/tarvydas/quicklisp/local-projects/bootstrap/d2fb/das2f/";
 
 function sfdiagramparser (xml) {
 //     | $prep '.' '$' $d2fdir/diagram.ohm $d2fdir/diagram.glue --stop=1 --support=$d2fdir/support.js \
@@ -58,18 +59,28 @@ function sfprolog2json (fb) {
     console.log (_result.toString ());
 }
 
-function prologquery (s) {
+function queryAndExtendFB (fb, script) {
+    // fb <= factase
+    // script <= .bash script to perform a PROLOG query
+    // tack query results onto fb and return the new fb
+
     const { exec, execSync } = require("child_process");
 
-    var _newfacts = execSync (`swipl -l "${s}" -g 'query,halt.'`).toString ();
-    console.error (_newfacts);
-    return _newfacts;
+    // brute-force implementation like the
+    // original das2fb/run-fb-pipeline.bash script
+    // this needs optimization (or not)
+    
+    fs.writeFileSync ('fb.pl', fb);
+
+    var _newfacts = execSync (queryDirectory + script).toString ();
+    // console.error (_newfacts);
+    var _extendedFB = fb + '\n' +_newfacts;
+    return _extendedFB;
 }
 
 function sfkinds (fb) {
     console.error ('kinds');
-    fs.writeFileSync ('fb.pl', fb);
-    return prologquery ('kinds.pl');
+    return queryAndExtendFB (fb, 'layerkind_query.bash');
 }
 
 function sfnames (fb) {

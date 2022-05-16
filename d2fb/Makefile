@@ -1,8 +1,10 @@
+# note: ./das2f contains PROLOG queries for transpiling diagrams to factbases (incl. inferring async details about diagrams)
+
 prep=./prep/prep
 cwd=`pwd`
 support=--support=${cwd}/support.js
 
-all: clean main.js
+all: clean queries main.js
 #	node main.js d2f.drawio
 #	./d2f d2f.drawio
 	./d2json d2f.drawio
@@ -32,9 +34,9 @@ main.js: pre.js cos.js d2f.js funcs.js post.js parser.js
 	cat pre.js cos.js d2f.js funcs.js parser.js post.js >d2jsonmain.js
 
 queries:
-	(cd queries-d2f ; make build)
+	(cd das2f ; make build)
 
 clean:
 	rm -f d2f.json d2f.js main.js
-	(cd queries-d2f ; make clean)
+	(cd das2f ; make clean)
 	(cd boot/das2json ; make clean)
