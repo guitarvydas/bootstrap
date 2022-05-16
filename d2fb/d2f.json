@@ -14,7 +14,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_105",
+      "id":"cell_106",
       "inputs": ["in" ],
       "name":"prolog convert to json",
       "outputs": ["out" ],
@@ -25,7 +25,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_108",
+      "id":"cell_109",
       "inputs": ["in" ],
       "name":"finish",
       "outputs": [],
@@ -163,6 +163,10 @@
 	  "senders": [ {"sender": {"component":"uncompress", "port":"out"}} ]
 	},
 	{
+	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"design rule edge containment", "port":"out"}} ]
+	},
+	{
 	  "receivers": [ {"receiver": {"component":"finish", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"prolog convert to json", "port":"out"}} ]
 	},
@@ -207,7 +211,7 @@
 	  "senders": [ {"sender": {"component":"color", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"direction", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"boundingbox", "port":"out"}} ]
 	},
 	{

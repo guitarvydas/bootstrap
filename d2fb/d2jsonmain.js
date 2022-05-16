@@ -781,26 +781,27 @@ function whole_makechildren (container) {
 
 function whole_makeconnections (container) {
     var conn23 = {sender:{name: "uncompress", etag: "out"}, net: "NIY", receivers:  [{name: "diagramparser", etag: "in"}] };
-    var conn24 = {sender:{name: "prolog convert to json", etag: "out"}, net: "NIY", receivers:  [{name: "finish", etag: "in"}] };
-    var conn25 = {sender:{name: "diagramparser", etag: "out"}, net: "NIY", receivers:  [{name: "styleexpander", etag: "in"}] };
-    var conn26 = {sender:{name: "styleexpander", etag: "out"}, net: "NIY", receivers:  [{name: "asfactbase", etag: "in"}] };
-    var conn27 = {sender:{name: "asfactbase", etag: "out"}, net: "NIY", receivers:  [{name: "deleteblanklines", etag: "in"}] };
-    var conn28 = {sender:{name: "deleteblanklines", etag: "out"}, net: "NIY", receivers:  [{name: "sortForPROLOG", etag: "in"}] };
-    var conn29 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
-    var conn30 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
-    var conn31 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
-    var conn32 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
-    var conn33 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
-    var conn34 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
-    var conn35 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
-    var conn36 = {sender:{name: "direction", etag: "out"}, net: "NIY", receivers:  [{name: "contains", etag: "in"}] };
-    var conn37 = {sender:{name: "contains", etag: "out"}, net: "NIY", receivers:  [{name: "contains port", etag: "in"}] };
-    var conn38 = {sender:{name: "contains port", etag: "out"}, net: "NIY", receivers:  [{name: "direct containment", etag: "in"}] };
-    var conn39 = {sender:{name: "direct containment", etag: "out"}, net: "NIY", receivers:  [{name: "edge containment", etag: "in"}] };
-    var conn40 = {sender:{name: "edge containment", etag: "out"}, net: "NIY", receivers:  [{name: "sync code", etag: "in"}] };
-    var conn41 = {sender:{name: "sync code", etag: "out"}, net: "NIY", receivers:  [{name: "connections", etag: "in"}] };
-    var conn42 = {sender:{name: "connections", etag: "out"}, net: "NIY", receivers:  [{name: "design rule edge containment", etag: "in"}] };
-    var connections = [ conn23, conn24, conn25, conn26, conn27, conn28, conn29, conn30, conn31, conn32, conn33, conn34, conn35, conn36, conn37, conn38, conn39, conn40, conn41, conn42 ];
+    var conn24 = {sender:{name: "design rule edge containment", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
+    var conn25 = {sender:{name: "prolog convert to json", etag: "out"}, net: "NIY", receivers:  [{name: "finish", etag: "in"}] };
+    var conn26 = {sender:{name: "diagramparser", etag: "out"}, net: "NIY", receivers:  [{name: "styleexpander", etag: "in"}] };
+    var conn27 = {sender:{name: "styleexpander", etag: "out"}, net: "NIY", receivers:  [{name: "asfactbase", etag: "in"}] };
+    var conn28 = {sender:{name: "asfactbase", etag: "out"}, net: "NIY", receivers:  [{name: "deleteblanklines", etag: "in"}] };
+    var conn29 = {sender:{name: "deleteblanklines", etag: "out"}, net: "NIY", receivers:  [{name: "sortForPROLOG", etag: "in"}] };
+    var conn30 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
+    var conn31 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
+    var conn32 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
+    var conn33 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
+    var conn34 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
+    var conn35 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
+    var conn36 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "direction", etag: "in"}] };
+    var conn37 = {sender:{name: "direction", etag: "out"}, net: "NIY", receivers:  [{name: "contains", etag: "in"}] };
+    var conn38 = {sender:{name: "contains", etag: "out"}, net: "NIY", receivers:  [{name: "contains port", etag: "in"}] };
+    var conn39 = {sender:{name: "contains port", etag: "out"}, net: "NIY", receivers:  [{name: "direct containment", etag: "in"}] };
+    var conn40 = {sender:{name: "direct containment", etag: "out"}, net: "NIY", receivers:  [{name: "edge containment", etag: "in"}] };
+    var conn41 = {sender:{name: "edge containment", etag: "out"}, net: "NIY", receivers:  [{name: "sync code", etag: "in"}] };
+    var conn42 = {sender:{name: "sync code", etag: "out"}, net: "NIY", receivers:  [{name: "connections", etag: "in"}] };
+    var conn43 = {sender:{name: "connections", etag: "out"}, net: "NIY", receivers:  [{name: "design rule edge containment", etag: "in"}] };
+    var connections = [ conn23, conn24, conn25, conn26, conn27, conn28, conn29, conn30, conn31, conn32, conn33, conn34, conn35, conn36, conn37, conn38, conn39, conn40, conn41, conn42, conn43 ];
     return connections;
 }
 
@@ -1160,6 +1161,7 @@ function sfprolog2json (fb) {
     // console.log (_result.toString ());
     fs.writeFileSync ('tempfb.json', _result);
     console.log ('see tempfb.pl and tempfb.json');
+    return true;
 }
 
 function queryAndExtendFB (fb, script) {

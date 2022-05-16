@@ -59,6 +59,7 @@ function sfprolog2json (fb) {
     // console.log (_result.toString ());
     fs.writeFileSync ('tempfb.json', _result);
     console.log ('see tempfb.pl and tempfb.json');
+    return true;
 }
 
 function queryAndExtendFB (fb, script) {
