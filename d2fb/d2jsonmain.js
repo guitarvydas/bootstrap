@@ -1320,18 +1320,17 @@ function sfdirectcontainment (fb) {
 
 function sfedgecontainment1 (fb) {
     console.error ('edge containment 1');
-    // return queryAndExtendFB (fb, 'layer6.bash');
-    return fb;
+    return queryAndExtendFB (fb, 'layeredgecontainment1_query.bash');
 }
 
 function sfedgecontainment2 (fb) {
     console.error ('edge containment 2');
-    return fb;
+    return queryAndExtendFB (fb, 'layeredgecontainment2_query.bash');
 }
 
 function sfedgecontainment3 (fb) {
     console.error ('edge containment 3');
-    return fb;
+    return queryAndExtendFB (fb, 'layeredgecontainment3_query.bash');
 }
 
 function sfsynccode (fb) {
