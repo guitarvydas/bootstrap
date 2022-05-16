@@ -5,7 +5,7 @@
       "connections": [],
       "id":"cell_101",
       "inputs": ["in" ],
-      "name":"design rule edge containment",
+      "name":"design_rule_edge_containment",
       "outputs": ["out" ],
       "synccode":"var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -16,7 +16,7 @@
       "connections": [],
       "id":"cell_105",
       "inputs": ["in" ],
-      "name":"prolog convert to json",
+      "name":"prolog_convert_to_json",
       "outputs": ["out" ],
       "synccode":"var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -38,7 +38,7 @@
       "connections": [],
       "id":"cell_113",
       "inputs": ["in" ],
-      "name":"edge containment 1",
+      "name":"edge_containment_1",
       "outputs": ["out" ],
       "synccode":"var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -49,7 +49,7 @@
       "connections": [],
       "id":"cell_118",
       "inputs": ["in" ],
-      "name":"edge containment 2",
+      "name":"edge_containment_2",
       "outputs": ["out" ],
       "synccode":"var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -60,7 +60,7 @@
       "connections": [],
       "id":"cell_123",
       "inputs": ["in" ],
-      "name":"direct containment",
+      "name":"direct_containment",
       "outputs": ["out" ],
       "synccode":"var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -167,12 +167,12 @@
   [
     {
       "children": [
-	"design rule edge containment",
-	"prolog convert to json",
+	"design_rule_edge_containment",
+	"prolog_convert_to_json",
 	"finish",
-	"edge containment 1",
-	"edge containment 2",
-	"direct containment",
+	"edge_containment_1",
+	"edge_containment_2",
+	"direct_containment",
 	"diagramparser",
 	"asfactbase",
 	"deleteblanklines",
@@ -186,11 +186,11 @@
 	"direction",
 	"styleexpander",
 	"contains",
-	"contains port",
+	"contains_port",
 	"uncompress",
-	"indirect containment",
-	"edge containment 3",
-	"sync code",
+	"indirect_containment",
+	"edge_containment_3",
+	"sync_code",
 	"connections"
       ],
       "connections": [
@@ -200,19 +200,19 @@
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"finish", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"prolog convert to json", "port":"out"}} ]
+	  "senders": [ {"sender": {"component":"prolog_convert_to_json", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"edge containment 2", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"edge containment 1", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"edge_containment_2", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"edge_containment_1", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"edge containment 3", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"edge containment 2", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"edge_containment_3", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"edge_containment_2", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"edge containment 1", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"direct containment", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"edge_containment_1", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"direct_containment", "port":"out"}} ]
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"styleexpander", "port":"in"}} ],
@@ -263,27 +263,27 @@
 	  "senders": [ {"sender": {"component":"direction", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"contains port", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"contains_port", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"contains", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"indirect containment", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"contains port", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"indirect_containment", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"contains_port", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"direct containment", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"indirect containment", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"direct_containment", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"indirect_containment", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"sync code", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"edge containment 3", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"sync_code", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"edge_containment_3", "port":"out"}} ]
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"connections", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"sync code", "port":"out"}} ]
+	  "senders": [ {"sender": {"component":"sync_code", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"prolog_convert_to_json", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"connections", "port":"out"}} ]
 	}
       ],
@@ -344,7 +344,7 @@
       "connections": [],
       "id":"cell_76",
       "inputs": ["in" ],
-      "name":"contains port",
+      "name":"contains_port",
       "outputs": ["out" ],
       "synccode":"var x = sfcontainsport (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -366,7 +366,7 @@
       "connections": [],
       "id":"cell_81",
       "inputs": ["in" ],
-      "name":"indirect containment",
+      "name":"indirect_containment",
       "outputs": ["out" ],
       "synccode":"var x = sfindirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -377,7 +377,7 @@
       "connections": [],
       "id":"cell_86",
       "inputs": ["in" ],
-      "name":"edge containment 3",
+      "name":"edge_containment_3",
       "outputs": ["out" ],
       "synccode":"var x = sfedgecontainment3 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
@@ -388,7 +388,7 @@
       "connections": [],
       "id":"cell_91",
       "inputs": ["in" ],
-      "name":"sync code",
+      "name":"sync_code",
       "outputs": ["out" ],
       "synccode":"var x = sfsynccode (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }

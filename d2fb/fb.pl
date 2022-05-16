@@ -1464,11 +1464,11 @@ diagram_fact(target, cell_88, id_YSdUcc7_uIE6RB1LT__ku__99).
 diagram_fact(target, cell_93, id_YSdUcc7_uIE6RB1LT__ku__104).
 diagram_fact(target, cell_98, o9WitYf8nZo9U9cAR0vl__2).
 diagram_fact(value, cell_100, "in").
-diagram_fact(value, cell_101, "design rule edge containment").
+diagram_fact(value, cell_101, "design_rule_edge_containment").
 diagram_fact(value, cell_102, "var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_103, "out").
 diagram_fact(value, cell_104, "in").
-diagram_fact(value, cell_105, "prolog convert to json").
+diagram_fact(value, cell_105, "prolog_convert_to_json").
 diagram_fact(value, cell_106, "var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_107, "in").
 diagram_fact(value, cell_108, "finish").
@@ -1476,16 +1476,16 @@ diagram_fact(value, cell_109, "// console.log (message.data);&lt;br&gt;done ();&
 diagram_fact(value, cell_11, "out").
 diagram_fact(value, cell_110, "in").
 diagram_fact(value, cell_112, "out").
-diagram_fact(value, cell_113, "edge containment 1").
+diagram_fact(value, cell_113, "edge_containment_1").
 diagram_fact(value, cell_114, "var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_116, "out").
 diagram_fact(value, cell_117, "in").
-diagram_fact(value, cell_118, "edge containment 2").
+diagram_fact(value, cell_118, "edge_containment_2").
 diagram_fact(value, cell_119, "var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_12, "in").
 diagram_fact(value, cell_121, "out").
 diagram_fact(value, cell_122, "in").
-diagram_fact(value, cell_123, "direct containment").
+diagram_fact(value, cell_123, "direct_containment").
 diagram_fact(value, cell_124, "var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_126, "out").
 diagram_fact(value, cell_127, "in").
@@ -1541,21 +1541,21 @@ diagram_fact(value, cell_71, "contains").
 diagram_fact(value, cell_72, "var x = sfcontains (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_74, "out").
 diagram_fact(value, cell_75, "in").
-diagram_fact(value, cell_76, "contains port").
+diagram_fact(value, cell_76, "contains_port").
 diagram_fact(value, cell_77, "var x = sfcontainsport (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_79, "out").
 diagram_fact(value, cell_8, "uncompress").
 diagram_fact(value, cell_80, "in").
-diagram_fact(value, cell_81, "indirect containment").
+diagram_fact(value, cell_81, "indirect_containment").
 diagram_fact(value, cell_82, "var x = sfindirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_84, "out").
 diagram_fact(value, cell_85, "in").
-diagram_fact(value, cell_86, "edge containment 3").
+diagram_fact(value, cell_86, "edge_containment_3").
 diagram_fact(value, cell_87, "var x = sfedgecontainment3 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_89, "out").
 diagram_fact(value, cell_9, "var u = sfuncompress (message.data);&lt;br&gt;me.send (&quot;out&quot;, u, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_90, "in").
-diagram_fact(value, cell_91, "sync code").
+diagram_fact(value, cell_91, "sync_code").
 diagram_fact(value, cell_92, "var x = sfsynccode (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_94, "out").
 diagram_fact(value, cell_95, "in").
@@ -2209,11 +2209,11 @@ das_fact(kind,cell_98,edge).
 das_fact(kind,cell_99,ellipse).
 
 das_fact(name, cell_100, "in").
-das_fact(name, cell_101, "design rule edge containment").
+das_fact(name, cell_101, "design_rule_edge_containment").
 das_fact(name, cell_102, "var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_103, "out").
 das_fact(name, cell_104, "in").
-das_fact(name, cell_105, "prolog convert to json").
+das_fact(name, cell_105, "prolog_convert_to_json").
 das_fact(name, cell_106, "var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_107, "in").
 das_fact(name, cell_108, "finish").
@@ -2221,16 +2221,16 @@ das_fact(name, cell_109, "// console.log (message.data);&lt;br&gt;done ();&lt;br
 das_fact(name, cell_11, "out").
 das_fact(name, cell_110, "in").
 das_fact(name, cell_112, "out").
-das_fact(name, cell_113, "edge containment 1").
+das_fact(name, cell_113, "edge_containment_1").
 das_fact(name, cell_114, "var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_116, "out").
 das_fact(name, cell_117, "in").
-das_fact(name, cell_118, "edge containment 2").
+das_fact(name, cell_118, "edge_containment_2").
 das_fact(name, cell_119, "var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_12, "in").
 das_fact(name, cell_121, "out").
 das_fact(name, cell_122, "in").
-das_fact(name, cell_123, "direct containment").
+das_fact(name, cell_123, "direct_containment").
 das_fact(name, cell_124, "var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_126, "out").
 das_fact(name, cell_127, "in").
@@ -2286,21 +2286,21 @@ das_fact(name, cell_71, "contains").
 das_fact(name, cell_72, "var x = sfcontains (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_74, "out").
 das_fact(name, cell_75, "in").
-das_fact(name, cell_76, "contains port").
+das_fact(name, cell_76, "contains_port").
 das_fact(name, cell_77, "var x = sfcontainsport (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_79, "out").
 das_fact(name, cell_8, "uncompress").
 das_fact(name, cell_80, "in").
-das_fact(name, cell_81, "indirect containment").
+das_fact(name, cell_81, "indirect_containment").
 das_fact(name, cell_82, "var x = sfindirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_84, "out").
 das_fact(name, cell_85, "in").
-das_fact(name, cell_86, "edge containment 3").
+das_fact(name, cell_86, "edge_containment_3").
 das_fact(name, cell_87, "var x = sfedgecontainment3 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_89, "out").
 das_fact(name, cell_9, "var u = sfuncompress (message.data);&lt;br&gt;me.send (&quot;out&quot;, u, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_90, "in").
-das_fact(name, cell_91, "sync code").
+das_fact(name, cell_91, "sync_code").
 das_fact(name, cell_92, "var x = sfsynccode (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_94, "out").
 das_fact(name, cell_95, "in").
@@ -3276,3 +3276,73 @@ das_fact(codebox,cell_87,"var x = sfedgecontainment3 (message.data);&lt;br&gt;me
 das_fact(codebox,cell_9,"var u = sfuncompress (message.data);&lt;br&gt;me.send (&quot;out&quot;, u, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(codebox,cell_92,"var x = sfsynccode (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(codebox,cell_97,"var x = sfconnections (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+
+das_fact(connection, cell_6, cell_10).
+das_fact(sender, cell_10, sender{component:uncompress,port:out}).
+das_fact(receiver, cell_10, receiver{component:diagramparser,port:in}).
+das_fact(connection, cell_6, cell_111).
+das_fact(sender, cell_111, sender{component:prolog_convert_to_json,port:out}).
+das_fact(receiver, cell_111, receiver{component:finish,port:in}).
+das_fact(connection, cell_6, cell_115).
+das_fact(sender, cell_115, sender{component:edge_containment_1,port:out}).
+das_fact(receiver, cell_115, receiver{component:edge_containment_2,port:in}).
+das_fact(connection, cell_6, cell_120).
+das_fact(sender, cell_120, sender{component:edge_containment_2,port:out}).
+das_fact(receiver, cell_120, receiver{component:edge_containment_3,port:in}).
+das_fact(connection, cell_6, cell_125).
+das_fact(sender, cell_125, sender{component:direct_containment,port:out}).
+das_fact(receiver, cell_125, receiver{component:edge_containment_1,port:in}).
+das_fact(connection, cell_6, cell_15).
+das_fact(sender, cell_15, sender{component:diagramparser,port:out}).
+das_fact(receiver, cell_15, receiver{component:styleexpander,port:in}).
+das_fact(connection, cell_6, cell_19).
+das_fact(sender, cell_19, sender{component:styleexpander,port:out}).
+das_fact(receiver, cell_19, receiver{component:asfactbase,port:in}).
+das_fact(connection, cell_6, cell_24).
+das_fact(sender, cell_24, sender{component:asfactbase,port:out}).
+das_fact(receiver, cell_24, receiver{component:deleteblanklines,port:in}).
+das_fact(connection, cell_6, cell_29).
+das_fact(sender, cell_29, sender{component:deleteblanklines,port:out}).
+das_fact(receiver, cell_29, receiver{component:sortForPROLOG,port:in}).
+das_fact(connection, cell_6, cell_34).
+das_fact(sender, cell_34, sender{component:sortForPROLOG,port:out}).
+das_fact(receiver, cell_34, receiver{component:deleteTrailingSugar,port:in}).
+das_fact(connection, cell_6, cell_42).
+das_fact(sender, cell_42, sender{component:kickStart,port:out}).
+das_fact(receiver, cell_42, receiver{component:uncompress,port:in}).
+das_fact(connection, cell_6, cell_44).
+das_fact(sender, cell_44, sender{component:deleteTrailingSugar,port:out}).
+das_fact(receiver, cell_44, receiver{component:kinds,port:in}).
+das_fact(connection, cell_6, cell_48).
+das_fact(sender, cell_48, sender{component:kinds,port:out}).
+das_fact(receiver, cell_48, receiver{component:name,port:in}).
+das_fact(connection, cell_6, cell_53).
+das_fact(sender, cell_53, sender{component:name,port:out}).
+das_fact(receiver, cell_53, receiver{component:color,port:in}).
+das_fact(connection, cell_6, cell_58).
+das_fact(sender, cell_58, sender{component:color,port:out}).
+das_fact(receiver, cell_58, receiver{component:boundingbox,port:in}).
+das_fact(connection, cell_6, cell_63).
+das_fact(sender, cell_63, sender{component:boundingbox,port:out}).
+das_fact(receiver, cell_63, receiver{component:direction,port:in}).
+das_fact(connection, cell_6, cell_68).
+das_fact(sender, cell_68, sender{component:direction,port:out}).
+das_fact(receiver, cell_68, receiver{component:contains,port:in}).
+das_fact(connection, cell_6, cell_73).
+das_fact(sender, cell_73, sender{component:contains,port:out}).
+das_fact(receiver, cell_73, receiver{component:contains_port,port:in}).
+das_fact(connection, cell_6, cell_78).
+das_fact(sender, cell_78, sender{component:contains_port,port:out}).
+das_fact(receiver, cell_78, receiver{component:indirect_containment,port:in}).
+das_fact(connection, cell_6, cell_83).
+das_fact(sender, cell_83, sender{component:indirect_containment,port:out}).
+das_fact(receiver, cell_83, receiver{component:direct_containment,port:in}).
+das_fact(connection, cell_6, cell_88).
+das_fact(sender, cell_88, sender{component:edge_containment_3,port:out}).
+das_fact(receiver, cell_88, receiver{component:sync_code,port:in}).
+das_fact(connection, cell_6, cell_93).
+das_fact(sender, cell_93, sender{component:sync_code,port:out}).
+das_fact(receiver, cell_93, receiver{component:connections,port:in}).
+das_fact(connection, cell_6, cell_98).
+das_fact(sender, cell_98, sender{component:connections,port:out}).
+das_fact(receiver, cell_98, receiver{component:prolog_convert_to_json,port:in}).

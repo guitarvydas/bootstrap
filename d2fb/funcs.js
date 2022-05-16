@@ -1,4 +1,5 @@
 const queryDirectory = "/Users/tarvydas/quicklisp/local-projects/bootstrap/d2fb/das2f/";
+const jsondir = "/Users/tarvydas/quicklisp/local-projects/bootstrap/d2fb/das2j/";
 
 function sfdiagramparser (xml) {
 //     | $prep '.' '$' $d2fdir/diagram.ohm $d2fdir/diagram.glue --stop=1 --support=$d2fdir/support.js \
@@ -62,20 +63,12 @@ function sfreadfile (fname) {
 //     return true;
 // }
 function sfprolog2json (fb) {
-    // maybe replace this with https://www.npmjs.com/package/tau-prolog?
-
-    const { exec, execSync } = require("child_process");
-
-    fs.writeFileSync( 'tempfb.pl', fb);
-
-    var _result = execSync ("swipl -l 'rfb.pl' -g 'exec,halt.'");
-    // console.log (_result.toString ());
-    fs.writeFileSync ('tempfb.json', _result);
-    console.log ('see tempfb.pl and tempfb.json');
-    return true;
+    fs.writeFileSync ('tempfb.pl', fb);
+    console.error ('tempfb.pl written');
+    return query (fb, jsondir, 'layercomponent_query.bash');
 }
 
-function query (fb, script) {
+function query (fb, dir, script) {
     // fb <= factase
     // script <= .bash script to perform a PROLOG query
     // tack query results onto fb and return the new fb
@@ -88,12 +81,12 @@ function query (fb, script) {
     
     fs.writeFileSync ('fb.pl', fb);
 
-    var _newfacts = execSync (queryDirectory + script).toString ();
+    var _newfacts = execSync (dir + script).toString ();
     return _newfacts;
 }
 
 function queryAndExtendFB (fb, script) {
-    var _newfacts = query (fb, script);
+    var _newfacts = query (fb, queryDirectory, script);
     // console.error (_newfacts);
     var _extendedFB = fb + '\n' +_newfacts;
     return _extendedFB;
