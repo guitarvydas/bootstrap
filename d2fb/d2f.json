@@ -191,11 +191,11 @@
 	  "senders": [ {"sender": {"component":"kickStart", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"kinds", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"deleteTrailingSugar", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"name", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"kinds", "port":"out"}} ]
 	},
 	{

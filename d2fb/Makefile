@@ -31,6 +31,10 @@ main.js: pre.js cos.js d2f.js funcs.js post.js parser.js
 	cat pre.js cos.js d2f.js funcs.js parser.js post.js >main.js
 	cat pre.js cos.js d2f.js funcs.js parser.js post.js >d2jsonmain.js
 
+queries:
+	(cd queries-d2f ; make build)
+
 clean:
 	rm -f d2f.json d2f.js main.js
+	(cd queries-d2f ; make clean)
 	(cd boot/das2json ; make clean)

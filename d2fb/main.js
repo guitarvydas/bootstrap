@@ -788,8 +788,8 @@ function whole_makeconnections (container) {
     var conn28 = {sender:{name: "deleteblanklines", etag: "out"}, net: "NIY", receivers:  [{name: "sortForPROLOG", etag: "in"}] };
     var conn29 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
     var conn30 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
-    var conn31 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
-    var conn32 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
+    var conn31 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
+    var conn32 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
     var conn33 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
     var conn34 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
     var conn35 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "direction", etag: "in"}] };
@@ -1159,8 +1159,18 @@ function sfprolog2json (fb) {
     console.log (_result.toString ());
 }
 
+function prologquery (s) {
+    const { exec, execSync } = require("child_process");
+
+    var _newfacts = execSync (`swipl -l "${s}" -g 'query,halt.'`).toString ();
+    console.error (_newfacts);
+    return _newfacts;
+}
+
 function sfkinds (fb) {
     console.error ('kinds');
+    fs.writeFileSync ('fb.pl', fb);
+    return prologquery ('kinds.pl');
 }
 
 function sfnames (fb) {

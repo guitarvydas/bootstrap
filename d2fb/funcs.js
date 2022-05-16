@@ -58,8 +58,18 @@ function sfprolog2json (fb) {
     console.log (_result.toString ());
 }
 
+function prologquery (s) {
+    const { exec, execSync } = require("child_process");
+
+    var _newfacts = execSync (`swipl -l "${s}" -g 'query,halt.'`).toString ();
+    console.error (_newfacts);
+    return _newfacts;
+}
+
 function sfkinds (fb) {
     console.error ('kinds');
+    fs.writeFileSync ('fb.pl', fb);
+    return prologquery ('kinds.pl');
 }
 
 function sfnames (fb) {
