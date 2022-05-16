@@ -48,6 +48,19 @@ function sfreadfile (fname) {
     return bytes;
 }
 
+// function sfprolog2json (fb) {
+//     // maybe replace this with https://www.npmjs.com/package/tau-prolog?
+
+//     const { exec, execSync } = require("child_process");
+
+//     fs.writeFileSync( 'tempfb.pl', fb);
+
+//     var _result = execSync ("swipl -l 'rfb.pl' -g 'exec,halt.'");
+//     // console.log (_result.toString ());
+//     fs.writeFileSync ('tempfb.json', _result);
+//     console.log ('see tempfb.pl and tempfb.json');
+//     return true;
+// }
 function sfprolog2json (fb) {
     // maybe replace this with https://www.npmjs.com/package/tau-prolog?
 
@@ -62,7 +75,7 @@ function sfprolog2json (fb) {
     return true;
 }
 
-function queryAndExtendFB (fb, script) {
+function query (fb, script) {
     // fb <= factase
     // script <= .bash script to perform a PROLOG query
     // tack query results onto fb and return the new fb
@@ -76,6 +89,11 @@ function queryAndExtendFB (fb, script) {
     fs.writeFileSync ('fb.pl', fb);
 
     var _newfacts = execSync (queryDirectory + script).toString ();
+    return _newfacts;
+}
+
+function queryAndExtendFB (fb, script) {
+    var _newfacts = query (fb, script);
     // console.error (_newfacts);
     var _extendedFB = fb + '\n' +_newfacts;
     return _extendedFB;
@@ -146,16 +164,17 @@ function sfedgecontainment3 (fb) {
 
 function sfsynccode (fb) {
     console.error ('sync code');
-    return fb;
+    return queryAndExtendFB (fb, 'layersynccode_query.bash');
 }
 
 function sfconnections (fb) {
     console.error ('connections');
-    return fb;
+    return queryAndExtendFB (fb, 'layerconnection_query.bash');
 }
 
 function sfdesignruleedgecontainment (fb) {
     console.error ('design rule edge containment');
+    throw "NIY";
     return fb;
 }
 

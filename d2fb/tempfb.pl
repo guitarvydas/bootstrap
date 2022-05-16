@@ -1,10 +1,10 @@
            
 diagram_fact(align, cell_102, "left").
-diagram_fact(align, cell_107, "left").
-diagram_fact(align, cell_110, "left").
-diagram_fact(align, cell_115, "left").
-diagram_fact(align, cell_120, "left").
-diagram_fact(align, cell_125, "left").
+diagram_fact(align, cell_106, "left").
+diagram_fact(align, cell_109, "left").
+diagram_fact(align, cell_114, "left").
+diagram_fact(align, cell_119, "left").
+diagram_fact(align, cell_124, "left").
 diagram_fact(align, cell_14, "left").
 diagram_fact(align, cell_18, "left").
 diagram_fact(align, cell_23, "left").
@@ -55,7 +55,6 @@ diagram_fact(as, cell_124, "geometry").
 diagram_fact(as, cell_125, "geometry").
 diagram_fact(as, cell_126, "geometry").
 diagram_fact(as, cell_127, "geometry").
-diagram_fact(as, cell_128, "geometry").
 diagram_fact(as, cell_13, "geometry").
 diagram_fact(as, cell_14, "geometry").
 diagram_fact(as, cell_15, "geometry").
@@ -148,19 +147,19 @@ diagram_fact(as, cell_97, "geometry").
 diagram_fact(as, cell_98, "geometry").
 diagram_fact(as, cell_99, "geometry").
 diagram_fact(aspect, cell_100, "fixed").
+diagram_fact(aspect, cell_103, "fixed").
 diagram_fact(aspect, cell_104, "fixed").
-diagram_fact(aspect, cell_105, "fixed").
-diagram_fact(aspect, cell_108, "fixed").
+diagram_fact(aspect, cell_107, "fixed").
 diagram_fact(aspect, cell_11, "fixed").
-diagram_fact(aspect, cell_111, "fixed").
-diagram_fact(aspect, cell_113, "fixed").
+diagram_fact(aspect, cell_110, "fixed").
+diagram_fact(aspect, cell_112, "fixed").
+diagram_fact(aspect, cell_116, "fixed").
 diagram_fact(aspect, cell_117, "fixed").
-diagram_fact(aspect, cell_118, "fixed").
 diagram_fact(aspect, cell_12, "fixed").
+diagram_fact(aspect, cell_121, "fixed").
 diagram_fact(aspect, cell_122, "fixed").
-diagram_fact(aspect, cell_123, "fixed").
+diagram_fact(aspect, cell_126, "fixed").
 diagram_fact(aspect, cell_127, "fixed").
-diagram_fact(aspect, cell_128, "fixed").
 diagram_fact(aspect, cell_16, "fixed").
 diagram_fact(aspect, cell_17, "fixed").
 diagram_fact(aspect, cell_20, "fixed").
@@ -226,7 +225,6 @@ diagram_fact(cell, cell_124, "").
 diagram_fact(cell, cell_125, "").
 diagram_fact(cell, cell_126, "").
 diagram_fact(cell, cell_127, "").
-diagram_fact(cell, cell_128, "").
 diagram_fact(cell, cell_13, "").
 diagram_fact(cell, cell_14, "").
 diagram_fact(cell, cell_15, "").
@@ -322,11 +320,10 @@ diagram_fact(cell, cell_98, "").
 diagram_fact(cell, cell_99, "").
 diagram_fact(diagram, diagram_1, "").
 diagram_fact(edge, cell_10, 1).
-diagram_fact(edge, cell_103, 1).
-diagram_fact(edge, cell_112, 1).
-diagram_fact(edge, cell_116, 1).
-diagram_fact(edge, cell_121, 1).
-diagram_fact(edge, cell_126, 1).
+diagram_fact(edge, cell_111, 1).
+diagram_fact(edge, cell_115, 1).
+diagram_fact(edge, cell_120, 1).
+diagram_fact(edge, cell_125, 1).
 diagram_fact(edge, cell_15, 1).
 diagram_fact(edge, cell_19, 1).
 diagram_fact(edge, cell_24, 1).
@@ -346,11 +343,10 @@ diagram_fact(edge, cell_88, 1).
 diagram_fact(edge, cell_93, 1).
 diagram_fact(edge, cell_98, 1).
 diagram_fact(edgeStyle, cell_10, "orthogonalEdgeStyle").
-diagram_fact(edgeStyle, cell_103, "orthogonalEdgeStyle").
-diagram_fact(edgeStyle, cell_112, "orthogonalEdgeStyle").
-diagram_fact(edgeStyle, cell_116, "orthogonalEdgeStyle").
-diagram_fact(edgeStyle, cell_121, "orthogonalEdgeStyle").
-diagram_fact(edgeStyle, cell_126, "orthogonalEdgeStyle").
+diagram_fact(edgeStyle, cell_111, "orthogonalEdgeStyle").
+diagram_fact(edgeStyle, cell_115, "orthogonalEdgeStyle").
+diagram_fact(edgeStyle, cell_120, "orthogonalEdgeStyle").
+diagram_fact(edgeStyle, cell_125, "orthogonalEdgeStyle").
 diagram_fact(edgeStyle, cell_15, "orthogonalEdgeStyle").
 diagram_fact(edgeStyle, cell_19, "orthogonalEdgeStyle").
 diagram_fact(edgeStyle, cell_24, "orthogonalEdgeStyle").
@@ -370,10 +366,9 @@ diagram_fact(edgeStyle, cell_88, "orthogonalEdgeStyle").
 diagram_fact(edgeStyle, cell_93, "orthogonalEdgeStyle").
 diagram_fact(edgeStyle, cell_98, "orthogonalEdgeStyle").
 diagram_fact(entryDx, cell_10, 0).
-diagram_fact(entryDx, cell_103, 0).
-diagram_fact(entryDx, cell_112, 0).
-diagram_fact(entryDx, cell_116, 0).
-diagram_fact(entryDx, cell_126, 0).
+diagram_fact(entryDx, cell_111, 0).
+diagram_fact(entryDx, cell_115, 0).
+diagram_fact(entryDx, cell_125, 0).
 diagram_fact(entryDx, cell_15, 0).
 diagram_fact(entryDx, cell_19, 0).
 diagram_fact(entryDx, cell_24, 0).
@@ -390,10 +385,9 @@ diagram_fact(entryDx, cell_88, 0).
 diagram_fact(entryDx, cell_93, 0).
 diagram_fact(entryDx, cell_98, 0).
 diagram_fact(entryDy, cell_10, 0).
-diagram_fact(entryDy, cell_103, 0).
-diagram_fact(entryDy, cell_112, 0).
-diagram_fact(entryDy, cell_116, 0).
-diagram_fact(entryDy, cell_126, 0).
+diagram_fact(entryDy, cell_111, 0).
+diagram_fact(entryDy, cell_115, 0).
+diagram_fact(entryDy, cell_125, 0).
 diagram_fact(entryDy, cell_15, 0).
 diagram_fact(entryDy, cell_19, 0).
 diagram_fact(entryDy, cell_24, 0).
@@ -411,10 +405,9 @@ diagram_fact(entryDy, cell_93, 0).
 diagram_fact(entryDy, cell_98, 0).
 diagram_fact(entryPerimeter, cell_44, 0).
 diagram_fact(entryX, cell_10, 0).
-diagram_fact(entryX, cell_103, 0).
-diagram_fact(entryX, cell_112, 0).
-diagram_fact(entryX, cell_116, 0).
-diagram_fact(entryX, cell_126, 0).
+diagram_fact(entryX, cell_111, 0).
+diagram_fact(entryX, cell_115, 0).
+diagram_fact(entryX, cell_125, 0).
 diagram_fact(entryX, cell_15, 0).
 diagram_fact(entryX, cell_19, 0).
 diagram_fact(entryX, cell_24, 0).
@@ -431,10 +424,9 @@ diagram_fact(entryX, cell_88, 0).
 diagram_fact(entryX, cell_93, 0).
 diagram_fact(entryX, cell_98, 0).
 diagram_fact(entryY, cell_10, 0.5).
-diagram_fact(entryY, cell_103, 0.5).
-diagram_fact(entryY, cell_112, 0.5).
-diagram_fact(entryY, cell_116, 0.5).
-diagram_fact(entryY, cell_126, 0.5).
+diagram_fact(entryY, cell_111, 0.5).
+diagram_fact(entryY, cell_115, 0.5).
+diagram_fact(entryY, cell_125, 0.5).
 diagram_fact(entryY, cell_15, 0.5).
 diagram_fact(entryY, cell_19, 0.5).
 diagram_fact(entryY, cell_24, 0.5).
@@ -451,11 +443,10 @@ diagram_fact(entryY, cell_88, 0.5).
 diagram_fact(entryY, cell_93, 0.5).
 diagram_fact(entryY, cell_98, 0.5).
 diagram_fact(exitDx, cell_10, 0).
-diagram_fact(exitDx, cell_103, 0).
-diagram_fact(exitDx, cell_112, 0).
-diagram_fact(exitDx, cell_116, 0).
-diagram_fact(exitDx, cell_121, 0).
-diagram_fact(exitDx, cell_126, 0).
+diagram_fact(exitDx, cell_111, 0).
+diagram_fact(exitDx, cell_115, 0).
+diagram_fact(exitDx, cell_120, 0).
+diagram_fact(exitDx, cell_125, 0).
 diagram_fact(exitDx, cell_15, 0).
 diagram_fact(exitDx, cell_19, 0).
 diagram_fact(exitDx, cell_24, 0).
@@ -475,11 +466,10 @@ diagram_fact(exitDx, cell_88, 0).
 diagram_fact(exitDx, cell_93, 0).
 diagram_fact(exitDx, cell_98, 0).
 diagram_fact(exitDy, cell_10, 0).
-diagram_fact(exitDy, cell_103, 0).
-diagram_fact(exitDy, cell_112, 0).
-diagram_fact(exitDy, cell_116, 0).
-diagram_fact(exitDy, cell_121, 0).
-diagram_fact(exitDy, cell_126, 0).
+diagram_fact(exitDy, cell_111, 0).
+diagram_fact(exitDy, cell_115, 0).
+diagram_fact(exitDy, cell_120, 0).
+diagram_fact(exitDy, cell_125, 0).
 diagram_fact(exitDy, cell_15, 0).
 diagram_fact(exitDy, cell_19, 0).
 diagram_fact(exitDy, cell_24, 0).
@@ -499,11 +489,10 @@ diagram_fact(exitDy, cell_88, 0).
 diagram_fact(exitDy, cell_93, 0).
 diagram_fact(exitDy, cell_98, 0).
 diagram_fact(exitX, cell_10, 1).
-diagram_fact(exitX, cell_103, 1).
-diagram_fact(exitX, cell_112, 1).
-diagram_fact(exitX, cell_116, 1).
-diagram_fact(exitX, cell_121, 1).
-diagram_fact(exitX, cell_126, 1).
+diagram_fact(exitX, cell_111, 1).
+diagram_fact(exitX, cell_115, 1).
+diagram_fact(exitX, cell_120, 1).
+diagram_fact(exitX, cell_125, 1).
 diagram_fact(exitX, cell_15, 1).
 diagram_fact(exitX, cell_19, 1).
 diagram_fact(exitX, cell_24, 1).
@@ -523,11 +512,10 @@ diagram_fact(exitX, cell_88, 1).
 diagram_fact(exitX, cell_93, 1).
 diagram_fact(exitX, cell_98, 1).
 diagram_fact(exitY, cell_10, 0.5).
-diagram_fact(exitY, cell_103, 0.5).
-diagram_fact(exitY, cell_112, 0.5).
-diagram_fact(exitY, cell_116, 0.5).
-diagram_fact(exitY, cell_121, 0.5).
-diagram_fact(exitY, cell_126, 0.5).
+diagram_fact(exitY, cell_111, 0.5).
+diagram_fact(exitY, cell_115, 0.5).
+diagram_fact(exitY, cell_120, 0.5).
+diagram_fact(exitY, cell_125, 0.5).
 diagram_fact(exitY, cell_15, 0.5).
 diagram_fact(exitY, cell_19, 0.5).
 diagram_fact(exitY, cell_24, 0.5).
@@ -549,29 +537,29 @@ diagram_fact(exitY, cell_98, 0.5).
 diagram_fact(fillColor, cell_100, "#d5e8d4").
 diagram_fact(fillColor, cell_101, "#dae8fc").
 diagram_fact(fillColor, cell_102, "#f8cecc").
-diagram_fact(fillColor, cell_104, "#fff2cc").
-diagram_fact(fillColor, cell_105, "#d5e8d4").
-diagram_fact(fillColor, cell_106, "#dae8fc").
-diagram_fact(fillColor, cell_107, "#f8cecc").
-diagram_fact(fillColor, cell_108, "#d5e8d4").
-diagram_fact(fillColor, cell_109, "#dae8fc").
+diagram_fact(fillColor, cell_103, "#fff2cc").
+diagram_fact(fillColor, cell_104, "#d5e8d4").
+diagram_fact(fillColor, cell_105, "#dae8fc").
+diagram_fact(fillColor, cell_106, "#f8cecc").
+diagram_fact(fillColor, cell_107, "#d5e8d4").
+diagram_fact(fillColor, cell_108, "#dae8fc").
+diagram_fact(fillColor, cell_109, "#f8cecc").
 diagram_fact(fillColor, cell_11, "#fff2cc").
-diagram_fact(fillColor, cell_110, "#f8cecc").
-diagram_fact(fillColor, cell_111, "#d5e8d4").
-diagram_fact(fillColor, cell_113, "#fff2cc").
-diagram_fact(fillColor, cell_114, "#dae8fc").
-diagram_fact(fillColor, cell_115, "#f8cecc").
-diagram_fact(fillColor, cell_117, "#fff2cc").
-diagram_fact(fillColor, cell_118, "#d5e8d4").
-diagram_fact(fillColor, cell_119, "#dae8fc").
+diagram_fact(fillColor, cell_110, "#d5e8d4").
+diagram_fact(fillColor, cell_112, "#fff2cc").
+diagram_fact(fillColor, cell_113, "#dae8fc").
+diagram_fact(fillColor, cell_114, "#f8cecc").
+diagram_fact(fillColor, cell_116, "#fff2cc").
+diagram_fact(fillColor, cell_117, "#d5e8d4").
+diagram_fact(fillColor, cell_118, "#dae8fc").
+diagram_fact(fillColor, cell_119, "#f8cecc").
 diagram_fact(fillColor, cell_12, "#d5e8d4").
-diagram_fact(fillColor, cell_120, "#f8cecc").
-diagram_fact(fillColor, cell_122, "#fff2cc").
-diagram_fact(fillColor, cell_123, "#d5e8d4").
-diagram_fact(fillColor, cell_124, "#dae8fc").
-diagram_fact(fillColor, cell_125, "#f8cecc").
-diagram_fact(fillColor, cell_127, "#fff2cc").
-diagram_fact(fillColor, cell_128, "#d5e8d4").
+diagram_fact(fillColor, cell_121, "#fff2cc").
+diagram_fact(fillColor, cell_122, "#d5e8d4").
+diagram_fact(fillColor, cell_123, "#dae8fc").
+diagram_fact(fillColor, cell_124, "#f8cecc").
+diagram_fact(fillColor, cell_126, "#fff2cc").
+diagram_fact(fillColor, cell_127, "#d5e8d4").
 diagram_fact(fillColor, cell_13, "#dae8fc").
 diagram_fact(fillColor, cell_14, "#f8cecc").
 diagram_fact(fillColor, cell_16, "#fff2cc").
@@ -645,11 +633,11 @@ diagram_fact(fillColor, cell_96, "#dae8fc").
 diagram_fact(fillColor, cell_97, "#f8cecc").
 diagram_fact(fillColor, cell_99, "#fff2cc").
 diagram_fact(gradientColor, cell_101, "#7ea6e0").
-diagram_fact(gradientColor, cell_106, "#7ea6e0").
-diagram_fact(gradientColor, cell_109, "#7ea6e0").
-diagram_fact(gradientColor, cell_114, "#7ea6e0").
-diagram_fact(gradientColor, cell_119, "#7ea6e0").
-diagram_fact(gradientColor, cell_124, "#7ea6e0").
+diagram_fact(gradientColor, cell_105, "#7ea6e0").
+diagram_fact(gradientColor, cell_108, "#7ea6e0").
+diagram_fact(gradientColor, cell_113, "#7ea6e0").
+diagram_fact(gradientColor, cell_118, "#7ea6e0").
+diagram_fact(gradientColor, cell_123, "#7ea6e0").
 diagram_fact(gradientColor, cell_13, "#7ea6e0").
 diagram_fact(gradientColor, cell_22, "#7ea6e0").
 diagram_fact(gradientColor, cell_27, "#7ea6e0").
@@ -672,29 +660,29 @@ diagram_fact(gradientColor, cell_96, "#7ea6e0").
 diagram_fact(height, cell_100, 40).
 diagram_fact(height, cell_101, 130).
 diagram_fact(height, cell_102, 45).
+diagram_fact(height, cell_103, 40).
 diagram_fact(height, cell_104, 40).
-diagram_fact(height, cell_105, 40).
-diagram_fact(height, cell_106, 130).
-diagram_fact(height, cell_107, 65).
-diagram_fact(height, cell_108, 40).
-diagram_fact(height, cell_109, 130).
+diagram_fact(height, cell_105, 130).
+diagram_fact(height, cell_106, 65).
+diagram_fact(height, cell_107, 40).
+diagram_fact(height, cell_108, 130).
+diagram_fact(height, cell_109, 45).
 diagram_fact(height, cell_11, 40).
-diagram_fact(height, cell_110, 45).
-diagram_fact(height, cell_111, 40).
-diagram_fact(height, cell_113, 40).
-diagram_fact(height, cell_114, 130).
-diagram_fact(height, cell_115, 45).
+diagram_fact(height, cell_110, 40).
+diagram_fact(height, cell_112, 40).
+diagram_fact(height, cell_113, 130).
+diagram_fact(height, cell_114, 45).
+diagram_fact(height, cell_116, 40).
 diagram_fact(height, cell_117, 40).
-diagram_fact(height, cell_118, 40).
-diagram_fact(height, cell_119, 130).
+diagram_fact(height, cell_118, 130).
+diagram_fact(height, cell_119, 45).
 diagram_fact(height, cell_12, 40).
-diagram_fact(height, cell_120, 45).
+diagram_fact(height, cell_121, 40).
 diagram_fact(height, cell_122, 40).
-diagram_fact(height, cell_123, 40).
-diagram_fact(height, cell_124, 130).
-diagram_fact(height, cell_125, 45).
+diagram_fact(height, cell_123, 130).
+diagram_fact(height, cell_124, 45).
+diagram_fact(height, cell_126, 40).
 diagram_fact(height, cell_127, 40).
-diagram_fact(height, cell_128, 40).
 diagram_fact(height, cell_13, 130).
 diagram_fact(height, cell_14, 45).
 diagram_fact(height, cell_16, 40).
@@ -799,7 +787,6 @@ diagram_fact(html, cell_124, 1).
 diagram_fact(html, cell_125, 1).
 diagram_fact(html, cell_126, 1).
 diagram_fact(html, cell_127, 1).
-diagram_fact(html, cell_128, 1).
 diagram_fact(html, cell_13, 1).
 diagram_fact(html, cell_14, 1).
 diagram_fact(html, cell_15, 1).
@@ -892,11 +879,10 @@ diagram_fact(html, cell_97, 1).
 diagram_fact(html, cell_98, 1).
 diagram_fact(html, cell_99, 1).
 diagram_fact(jettySize, cell_10, "auto").
-diagram_fact(jettySize, cell_103, "auto").
-diagram_fact(jettySize, cell_112, "auto").
-diagram_fact(jettySize, cell_116, "auto").
-diagram_fact(jettySize, cell_121, "auto").
-diagram_fact(jettySize, cell_126, "auto").
+diagram_fact(jettySize, cell_111, "auto").
+diagram_fact(jettySize, cell_115, "auto").
+diagram_fact(jettySize, cell_120, "auto").
+diagram_fact(jettySize, cell_125, "auto").
 diagram_fact(jettySize, cell_15, "auto").
 diagram_fact(jettySize, cell_19, "auto").
 diagram_fact(jettySize, cell_24, "auto").
@@ -916,19 +902,19 @@ diagram_fact(jettySize, cell_88, "auto").
 diagram_fact(jettySize, cell_93, "auto").
 diagram_fact(jettySize, cell_98, "auto").
 diagram_fact(kind, cell_100, "ellipse").
+diagram_fact(kind, cell_103, "ellipse").
 diagram_fact(kind, cell_104, "ellipse").
-diagram_fact(kind, cell_105, "ellipse").
-diagram_fact(kind, cell_108, "ellipse").
+diagram_fact(kind, cell_107, "ellipse").
 diagram_fact(kind, cell_11, "ellipse").
-diagram_fact(kind, cell_111, "ellipse").
-diagram_fact(kind, cell_113, "ellipse").
+diagram_fact(kind, cell_110, "ellipse").
+diagram_fact(kind, cell_112, "ellipse").
+diagram_fact(kind, cell_116, "ellipse").
 diagram_fact(kind, cell_117, "ellipse").
-diagram_fact(kind, cell_118, "ellipse").
 diagram_fact(kind, cell_12, "ellipse").
+diagram_fact(kind, cell_121, "ellipse").
 diagram_fact(kind, cell_122, "ellipse").
-diagram_fact(kind, cell_123, "ellipse").
+diagram_fact(kind, cell_126, "ellipse").
 diagram_fact(kind, cell_127, "ellipse").
-diagram_fact(kind, cell_128, "ellipse").
 diagram_fact(kind, cell_16, "ellipse").
 diagram_fact(kind, cell_17, "ellipse").
 diagram_fact(kind, cell_20, "ellipse").
@@ -966,11 +952,10 @@ diagram_fact(kind, cell_99, "ellipse").
 diagram_fact(mxGraphModel, mxGraphModel_2, mxGraphModel_2).
 diagram_fact(name, diagram_1, "main").
 diagram_fact(orthogonalLoop, cell_10, 1).
-diagram_fact(orthogonalLoop, cell_103, 1).
-diagram_fact(orthogonalLoop, cell_112, 1).
-diagram_fact(orthogonalLoop, cell_116, 1).
-diagram_fact(orthogonalLoop, cell_121, 1).
-diagram_fact(orthogonalLoop, cell_126, 1).
+diagram_fact(orthogonalLoop, cell_111, 1).
+diagram_fact(orthogonalLoop, cell_115, 1).
+diagram_fact(orthogonalLoop, cell_120, 1).
+diagram_fact(orthogonalLoop, cell_125, 1).
 diagram_fact(orthogonalLoop, cell_15, 1).
 diagram_fact(orthogonalLoop, cell_19, 1).
 diagram_fact(orthogonalLoop, cell_24, 1).
@@ -1020,7 +1005,6 @@ diagram_fact(parent, cell_124, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_125, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_126, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_127, id_YSdUcc7_uIE6RB1LT__ku__1).
-diagram_fact(parent, cell_128, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_13, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_14, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_15, id_YSdUcc7_uIE6RB1LT__ku__1).
@@ -1114,11 +1098,10 @@ diagram_fact(parent, cell_97, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_98, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(parent, cell_99, id_YSdUcc7_uIE6RB1LT__ku__1).
 diagram_fact(relative, cell_10, 1).
-diagram_fact(relative, cell_103, 1).
-diagram_fact(relative, cell_112, 1).
-diagram_fact(relative, cell_116, 1).
-diagram_fact(relative, cell_121, 1).
-diagram_fact(relative, cell_126, 1).
+diagram_fact(relative, cell_111, 1).
+diagram_fact(relative, cell_115, 1).
+diagram_fact(relative, cell_120, 1).
+diagram_fact(relative, cell_125, 1).
 diagram_fact(relative, cell_15, 1).
 diagram_fact(relative, cell_19, 1).
 diagram_fact(relative, cell_24, 1).
@@ -1141,21 +1124,20 @@ diagram_fact(root, root_3, root_3).
 diagram_fact(rounded, cell_10, 0).
 diagram_fact(rounded, cell_101, 1).
 diagram_fact(rounded, cell_102, 0).
-diagram_fact(rounded, cell_103, 0).
-diagram_fact(rounded, cell_106, 1).
-diagram_fact(rounded, cell_107, 0).
-diagram_fact(rounded, cell_109, 1).
-diagram_fact(rounded, cell_110, 0).
-diagram_fact(rounded, cell_112, 0).
-diagram_fact(rounded, cell_114, 1).
+diagram_fact(rounded, cell_105, 1).
+diagram_fact(rounded, cell_106, 0).
+diagram_fact(rounded, cell_108, 1).
+diagram_fact(rounded, cell_109, 0).
+diagram_fact(rounded, cell_111, 0).
+diagram_fact(rounded, cell_113, 1).
+diagram_fact(rounded, cell_114, 0).
 diagram_fact(rounded, cell_115, 0).
-diagram_fact(rounded, cell_116, 0).
-diagram_fact(rounded, cell_119, 1).
+diagram_fact(rounded, cell_118, 1).
+diagram_fact(rounded, cell_119, 0).
 diagram_fact(rounded, cell_120, 0).
-diagram_fact(rounded, cell_121, 0).
-diagram_fact(rounded, cell_124, 1).
+diagram_fact(rounded, cell_123, 1).
+diagram_fact(rounded, cell_124, 0).
 diagram_fact(rounded, cell_125, 0).
-diagram_fact(rounded, cell_126, 0).
 diagram_fact(rounded, cell_13, 1).
 diagram_fact(rounded, cell_14, 0).
 diagram_fact(rounded, cell_15, 0).
@@ -1214,11 +1196,10 @@ diagram_fact(rounded, cell_96, 1).
 diagram_fact(rounded, cell_97, 0).
 diagram_fact(rounded, cell_98, 0).
 diagram_fact(source, cell_10, id_YSdUcc7_uIE6RB1LT__ku__7).
-diagram_fact(source, cell_103, id_YSdUcc7_uIE6RB1LT__ku__108).
-diagram_fact(source, cell_112, o9WitYf8nZo9U9cAR0vl__7).
-diagram_fact(source, cell_116, o9WitYf8nZo9U9cAR0vl__18).
-diagram_fact(source, cell_121, o9WitYf8nZo9U9cAR0vl__22).
-diagram_fact(source, cell_126, o9WitYf8nZo9U9cAR0vl__29).
+diagram_fact(source, cell_111, o9WitYf8nZo9U9cAR0vl__7).
+diagram_fact(source, cell_115, o9WitYf8nZo9U9cAR0vl__18).
+diagram_fact(source, cell_120, o9WitYf8nZo9U9cAR0vl__22).
+diagram_fact(source, cell_125, o9WitYf8nZo9U9cAR0vl__29).
 diagram_fact(source, cell_15, id_YSdUcc7_uIE6RB1LT__ku__12).
 diagram_fact(source, cell_19, id_YSdUcc7_uIE6RB1LT__ku__16).
 diagram_fact(source, cell_24, id_YSdUcc7_uIE6RB1LT__ku__21).
@@ -1240,29 +1221,29 @@ diagram_fact(source, cell_98, id_YSdUcc7_uIE6RB1LT__ku__103).
 diagram_fact(strokeColor, cell_100, "#82b366").
 diagram_fact(strokeColor, cell_101, "#6c8ebf").
 diagram_fact(strokeColor, cell_102, "#b85450").
-diagram_fact(strokeColor, cell_104, "#d6b656").
-diagram_fact(strokeColor, cell_105, "#82b366").
-diagram_fact(strokeColor, cell_106, "#6c8ebf").
-diagram_fact(strokeColor, cell_107, "#b85450").
-diagram_fact(strokeColor, cell_108, "#82b366").
-diagram_fact(strokeColor, cell_109, "#6c8ebf").
+diagram_fact(strokeColor, cell_103, "#d6b656").
+diagram_fact(strokeColor, cell_104, "#82b366").
+diagram_fact(strokeColor, cell_105, "#6c8ebf").
+diagram_fact(strokeColor, cell_106, "#b85450").
+diagram_fact(strokeColor, cell_107, "#82b366").
+diagram_fact(strokeColor, cell_108, "#6c8ebf").
+diagram_fact(strokeColor, cell_109, "#b85450").
 diagram_fact(strokeColor, cell_11, "#d6b656").
-diagram_fact(strokeColor, cell_110, "#b85450").
-diagram_fact(strokeColor, cell_111, "#82b366").
-diagram_fact(strokeColor, cell_113, "#d6b656").
-diagram_fact(strokeColor, cell_114, "#6c8ebf").
-diagram_fact(strokeColor, cell_115, "#b85450").
-diagram_fact(strokeColor, cell_117, "#d6b656").
-diagram_fact(strokeColor, cell_118, "#82b366").
-diagram_fact(strokeColor, cell_119, "#6c8ebf").
+diagram_fact(strokeColor, cell_110, "#82b366").
+diagram_fact(strokeColor, cell_112, "#d6b656").
+diagram_fact(strokeColor, cell_113, "#6c8ebf").
+diagram_fact(strokeColor, cell_114, "#b85450").
+diagram_fact(strokeColor, cell_116, "#d6b656").
+diagram_fact(strokeColor, cell_117, "#82b366").
+diagram_fact(strokeColor, cell_118, "#6c8ebf").
+diagram_fact(strokeColor, cell_119, "#b85450").
 diagram_fact(strokeColor, cell_12, "#82b366").
-diagram_fact(strokeColor, cell_120, "#b85450").
-diagram_fact(strokeColor, cell_122, "#d6b656").
-diagram_fact(strokeColor, cell_123, "#82b366").
-diagram_fact(strokeColor, cell_124, "#6c8ebf").
-diagram_fact(strokeColor, cell_125, "#b85450").
-diagram_fact(strokeColor, cell_127, "#d6b656").
-diagram_fact(strokeColor, cell_128, "#82b366").
+diagram_fact(strokeColor, cell_121, "#d6b656").
+diagram_fact(strokeColor, cell_122, "#82b366").
+diagram_fact(strokeColor, cell_123, "#6c8ebf").
+diagram_fact(strokeColor, cell_124, "#b85450").
+diagram_fact(strokeColor, cell_126, "#d6b656").
+diagram_fact(strokeColor, cell_127, "#82b366").
 diagram_fact(strokeColor, cell_13, "#6c8ebf").
 diagram_fact(strokeColor, cell_14, "#b85450").
 diagram_fact(strokeColor, cell_16, "#d6b656").
@@ -1339,34 +1320,33 @@ diagram_fact(synonym, cell_10, id_YSdUcc7_uIE6RB1LT__ku__6).
 diagram_fact(synonym, cell_100, id_YSdUcc7_uIE6RB1LT__ku__104).
 diagram_fact(synonym, cell_101, id_YSdUcc7_uIE6RB1LT__ku__105).
 diagram_fact(synonym, cell_102, id_YSdUcc7_uIE6RB1LT__ku__106).
-diagram_fact(synonym, cell_103, o9WitYf8nZo9U9cAR0vl__15).
-diagram_fact(synonym, cell_104, id_YSdUcc7_uIE6RB1LT__ku__108).
-diagram_fact(synonym, cell_105, id_YSdUcc7_uIE6RB1LT__ku__109).
-diagram_fact(synonym, cell_106, o9WitYf8nZo9U9cAR0vl__0).
-diagram_fact(synonym, cell_107, o9WitYf8nZo9U9cAR0vl__1).
-diagram_fact(synonym, cell_108, o9WitYf8nZo9U9cAR0vl__2).
-diagram_fact(synonym, cell_109, o9WitYf8nZo9U9cAR0vl__3).
+diagram_fact(synonym, cell_103, id_YSdUcc7_uIE6RB1LT__ku__108).
+diagram_fact(synonym, cell_104, id_YSdUcc7_uIE6RB1LT__ku__109).
+diagram_fact(synonym, cell_105, o9WitYf8nZo9U9cAR0vl__0).
+diagram_fact(synonym, cell_106, o9WitYf8nZo9U9cAR0vl__1).
+diagram_fact(synonym, cell_107, o9WitYf8nZo9U9cAR0vl__2).
+diagram_fact(synonym, cell_108, o9WitYf8nZo9U9cAR0vl__3).
+diagram_fact(synonym, cell_109, o9WitYf8nZo9U9cAR0vl__4).
 diagram_fact(synonym, cell_11, id_YSdUcc7_uIE6RB1LT__ku__7).
-diagram_fact(synonym, cell_110, o9WitYf8nZo9U9cAR0vl__4).
-diagram_fact(synonym, cell_111, o9WitYf8nZo9U9cAR0vl__5).
-diagram_fact(synonym, cell_112, o9WitYf8nZo9U9cAR0vl__6).
-diagram_fact(synonym, cell_113, o9WitYf8nZo9U9cAR0vl__7).
-diagram_fact(synonym, cell_114, o9WitYf8nZo9U9cAR0vl__16).
-diagram_fact(synonym, cell_115, o9WitYf8nZo9U9cAR0vl__17).
-diagram_fact(synonym, cell_116, o9WitYf8nZo9U9cAR0vl__24).
-diagram_fact(synonym, cell_117, o9WitYf8nZo9U9cAR0vl__18).
-diagram_fact(synonym, cell_118, o9WitYf8nZo9U9cAR0vl__19).
-diagram_fact(synonym, cell_119, o9WitYf8nZo9U9cAR0vl__20).
+diagram_fact(synonym, cell_110, o9WitYf8nZo9U9cAR0vl__5).
+diagram_fact(synonym, cell_111, o9WitYf8nZo9U9cAR0vl__6).
+diagram_fact(synonym, cell_112, o9WitYf8nZo9U9cAR0vl__7).
+diagram_fact(synonym, cell_113, o9WitYf8nZo9U9cAR0vl__16).
+diagram_fact(synonym, cell_114, o9WitYf8nZo9U9cAR0vl__17).
+diagram_fact(synonym, cell_115, o9WitYf8nZo9U9cAR0vl__24).
+diagram_fact(synonym, cell_116, o9WitYf8nZo9U9cAR0vl__18).
+diagram_fact(synonym, cell_117, o9WitYf8nZo9U9cAR0vl__19).
+diagram_fact(synonym, cell_118, o9WitYf8nZo9U9cAR0vl__20).
+diagram_fact(synonym, cell_119, o9WitYf8nZo9U9cAR0vl__21).
 diagram_fact(synonym, cell_12, id_YSdUcc7_uIE6RB1LT__ku__8).
-diagram_fact(synonym, cell_120, o9WitYf8nZo9U9cAR0vl__21).
-diagram_fact(synonym, cell_121, o9WitYf8nZo9U9cAR0vl__25).
-diagram_fact(synonym, cell_122, o9WitYf8nZo9U9cAR0vl__22).
-diagram_fact(synonym, cell_123, o9WitYf8nZo9U9cAR0vl__23).
-diagram_fact(synonym, cell_124, o9WitYf8nZo9U9cAR0vl__27).
-diagram_fact(synonym, cell_125, o9WitYf8nZo9U9cAR0vl__28).
-diagram_fact(synonym, cell_126, o9WitYf8nZo9U9cAR0vl__32).
-diagram_fact(synonym, cell_127, o9WitYf8nZo9U9cAR0vl__29).
-diagram_fact(synonym, cell_128, o9WitYf8nZo9U9cAR0vl__30).
+diagram_fact(synonym, cell_120, o9WitYf8nZo9U9cAR0vl__25).
+diagram_fact(synonym, cell_121, o9WitYf8nZo9U9cAR0vl__22).
+diagram_fact(synonym, cell_122, o9WitYf8nZo9U9cAR0vl__23).
+diagram_fact(synonym, cell_123, o9WitYf8nZo9U9cAR0vl__27).
+diagram_fact(synonym, cell_124, o9WitYf8nZo9U9cAR0vl__28).
+diagram_fact(synonym, cell_125, o9WitYf8nZo9U9cAR0vl__32).
+diagram_fact(synonym, cell_126, o9WitYf8nZo9U9cAR0vl__29).
+diagram_fact(synonym, cell_127, o9WitYf8nZo9U9cAR0vl__30).
 diagram_fact(synonym, cell_13, id_YSdUcc7_uIE6RB1LT__ku__9).
 diagram_fact(synonym, cell_14, id_YSdUcc7_uIE6RB1LT__ku__10).
 diagram_fact(synonym, cell_15, id_YSdUcc7_uIE6RB1LT__ku__11).
@@ -1458,14 +1438,13 @@ diagram_fact(synonym, cell_94, id_YSdUcc7_uIE6RB1LT__ku__98).
 diagram_fact(synonym, cell_95, id_YSdUcc7_uIE6RB1LT__ku__99).
 diagram_fact(synonym, cell_96, id_YSdUcc7_uIE6RB1LT__ku__100).
 diagram_fact(synonym, cell_97, id_YSdUcc7_uIE6RB1LT__ku__101).
-diagram_fact(synonym, cell_98, id_YSdUcc7_uIE6RB1LT__ku__102).
+diagram_fact(synonym, cell_98, o9WitYf8nZo9U9cAR0vl__33).
 diagram_fact(synonym, cell_99, id_YSdUcc7_uIE6RB1LT__ku__103).
 diagram_fact(target, cell_10, id_YSdUcc7_uIE6RB1LT__ku__13).
-diagram_fact(target, cell_103, o9WitYf8nZo9U9cAR0vl__2).
-diagram_fact(target, cell_112, o9WitYf8nZo9U9cAR0vl__5).
-diagram_fact(target, cell_116, o9WitYf8nZo9U9cAR0vl__23).
-diagram_fact(target, cell_121, id_YSdUcc7_uIE6RB1LT__ku__94).
-diagram_fact(target, cell_126, o9WitYf8nZo9U9cAR0vl__19).
+diagram_fact(target, cell_111, o9WitYf8nZo9U9cAR0vl__5).
+diagram_fact(target, cell_115, o9WitYf8nZo9U9cAR0vl__23).
+diagram_fact(target, cell_120, id_YSdUcc7_uIE6RB1LT__ku__94).
+diagram_fact(target, cell_125, o9WitYf8nZo9U9cAR0vl__19).
 diagram_fact(target, cell_15, id_YSdUcc7_uIE6RB1LT__ku__17).
 diagram_fact(target, cell_19, id_YSdUcc7_uIE6RB1LT__ku__22).
 diagram_fact(target, cell_24, id_YSdUcc7_uIE6RB1LT__ku__27).
@@ -1483,33 +1462,33 @@ diagram_fact(target, cell_78, id_YSdUcc7_uIE6RB1LT__ku__89).
 diagram_fact(target, cell_83, o9WitYf8nZo9U9cAR0vl__30).
 diagram_fact(target, cell_88, id_YSdUcc7_uIE6RB1LT__ku__99).
 diagram_fact(target, cell_93, id_YSdUcc7_uIE6RB1LT__ku__104).
-diagram_fact(target, cell_98, id_YSdUcc7_uIE6RB1LT__ku__109).
+diagram_fact(target, cell_98, o9WitYf8nZo9U9cAR0vl__2).
 diagram_fact(value, cell_100, "in").
 diagram_fact(value, cell_101, "design rule edge containment").
 diagram_fact(value, cell_102, "var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-diagram_fact(value, cell_104, "out").
-diagram_fact(value, cell_105, "in").
-diagram_fact(value, cell_106, "prolog convert to json").
-diagram_fact(value, cell_107, "var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-diagram_fact(value, cell_108, "in").
-diagram_fact(value, cell_109, "finish").
+diagram_fact(value, cell_103, "out").
+diagram_fact(value, cell_104, "in").
+diagram_fact(value, cell_105, "prolog convert to json").
+diagram_fact(value, cell_106, "var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+diagram_fact(value, cell_107, "in").
+diagram_fact(value, cell_108, "finish").
+diagram_fact(value, cell_109, "// console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_11, "out").
-diagram_fact(value, cell_110, "// console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-diagram_fact(value, cell_111, "in").
-diagram_fact(value, cell_113, "out").
-diagram_fact(value, cell_114, "edge containment 1").
-diagram_fact(value, cell_115, "var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-diagram_fact(value, cell_117, "out").
-diagram_fact(value, cell_118, "in").
-diagram_fact(value, cell_119, "edge containment 2").
+diagram_fact(value, cell_110, "in").
+diagram_fact(value, cell_112, "out").
+diagram_fact(value, cell_113, "edge containment 1").
+diagram_fact(value, cell_114, "var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+diagram_fact(value, cell_116, "out").
+diagram_fact(value, cell_117, "in").
+diagram_fact(value, cell_118, "edge containment 2").
+diagram_fact(value, cell_119, "var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_12, "in").
-diagram_fact(value, cell_120, "var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-diagram_fact(value, cell_122, "out").
-diagram_fact(value, cell_123, "in").
-diagram_fact(value, cell_124, "direct containment").
-diagram_fact(value, cell_125, "var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-diagram_fact(value, cell_127, "out").
-diagram_fact(value, cell_128, "in").
+diagram_fact(value, cell_121, "out").
+diagram_fact(value, cell_122, "in").
+diagram_fact(value, cell_123, "direct containment").
+diagram_fact(value, cell_124, "var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+diagram_fact(value, cell_126, "out").
+diagram_fact(value, cell_127, "in").
 diagram_fact(value, cell_13, "diagramparser").
 diagram_fact(value, cell_14, "var x = sfdiagramparser (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 diagram_fact(value, cell_16, "out").
@@ -1586,6 +1565,7 @@ diagram_fact(value, cell_99, "out").
 diagram_fact(vertex, cell_100, 1).
 diagram_fact(vertex, cell_101, 1).
 diagram_fact(vertex, cell_102, 1).
+diagram_fact(vertex, cell_103, 1).
 diagram_fact(vertex, cell_104, 1).
 diagram_fact(vertex, cell_105, 1).
 diagram_fact(vertex, cell_106, 1).
@@ -1594,21 +1574,20 @@ diagram_fact(vertex, cell_108, 1).
 diagram_fact(vertex, cell_109, 1).
 diagram_fact(vertex, cell_11, 1).
 diagram_fact(vertex, cell_110, 1).
-diagram_fact(vertex, cell_111, 1).
+diagram_fact(vertex, cell_112, 1).
 diagram_fact(vertex, cell_113, 1).
 diagram_fact(vertex, cell_114, 1).
-diagram_fact(vertex, cell_115, 1).
+diagram_fact(vertex, cell_116, 1).
 diagram_fact(vertex, cell_117, 1).
 diagram_fact(vertex, cell_118, 1).
 diagram_fact(vertex, cell_119, 1).
 diagram_fact(vertex, cell_12, 1).
-diagram_fact(vertex, cell_120, 1).
+diagram_fact(vertex, cell_121, 1).
 diagram_fact(vertex, cell_122, 1).
 diagram_fact(vertex, cell_123, 1).
 diagram_fact(vertex, cell_124, 1).
-diagram_fact(vertex, cell_125, 1).
+diagram_fact(vertex, cell_126, 1).
 diagram_fact(vertex, cell_127, 1).
-diagram_fact(vertex, cell_128, 1).
 diagram_fact(vertex, cell_13, 1).
 diagram_fact(vertex, cell_14, 1).
 diagram_fact(vertex, cell_16, 1).
@@ -1683,11 +1662,11 @@ diagram_fact(vertex, cell_96, 1).
 diagram_fact(vertex, cell_97, 1).
 diagram_fact(vertex, cell_99, 1).
 diagram_fact(verticalAlign, cell_101, "top").
-diagram_fact(verticalAlign, cell_106, "top").
-diagram_fact(verticalAlign, cell_109, "top").
-diagram_fact(verticalAlign, cell_114, "top").
-diagram_fact(verticalAlign, cell_119, "top").
-diagram_fact(verticalAlign, cell_124, "top").
+diagram_fact(verticalAlign, cell_105, "top").
+diagram_fact(verticalAlign, cell_108, "top").
+diagram_fact(verticalAlign, cell_113, "top").
+diagram_fact(verticalAlign, cell_118, "top").
+diagram_fact(verticalAlign, cell_123, "top").
 diagram_fact(verticalAlign, cell_13, "top").
 diagram_fact(verticalAlign, cell_22, "top").
 diagram_fact(verticalAlign, cell_27, "top").
@@ -1711,6 +1690,7 @@ diagram_fact(verticalAlign, cell_96, "top").
 diagram_fact(whiteSpace, cell_100, "wrap").
 diagram_fact(whiteSpace, cell_101, "wrap").
 diagram_fact(whiteSpace, cell_102, "wrap").
+diagram_fact(whiteSpace, cell_103, "wrap").
 diagram_fact(whiteSpace, cell_104, "wrap").
 diagram_fact(whiteSpace, cell_105, "wrap").
 diagram_fact(whiteSpace, cell_106, "wrap").
@@ -1719,21 +1699,20 @@ diagram_fact(whiteSpace, cell_108, "wrap").
 diagram_fact(whiteSpace, cell_109, "wrap").
 diagram_fact(whiteSpace, cell_11, "wrap").
 diagram_fact(whiteSpace, cell_110, "wrap").
-diagram_fact(whiteSpace, cell_111, "wrap").
+diagram_fact(whiteSpace, cell_112, "wrap").
 diagram_fact(whiteSpace, cell_113, "wrap").
 diagram_fact(whiteSpace, cell_114, "wrap").
-diagram_fact(whiteSpace, cell_115, "wrap").
+diagram_fact(whiteSpace, cell_116, "wrap").
 diagram_fact(whiteSpace, cell_117, "wrap").
 diagram_fact(whiteSpace, cell_118, "wrap").
 diagram_fact(whiteSpace, cell_119, "wrap").
 diagram_fact(whiteSpace, cell_12, "wrap").
-diagram_fact(whiteSpace, cell_120, "wrap").
+diagram_fact(whiteSpace, cell_121, "wrap").
 diagram_fact(whiteSpace, cell_122, "wrap").
 diagram_fact(whiteSpace, cell_123, "wrap").
 diagram_fact(whiteSpace, cell_124, "wrap").
-diagram_fact(whiteSpace, cell_125, "wrap").
+diagram_fact(whiteSpace, cell_126, "wrap").
 diagram_fact(whiteSpace, cell_127, "wrap").
-diagram_fact(whiteSpace, cell_128, "wrap").
 diagram_fact(whiteSpace, cell_13, "wrap").
 diagram_fact(whiteSpace, cell_14, "wrap").
 diagram_fact(whiteSpace, cell_16, "wrap").
@@ -1810,29 +1789,29 @@ diagram_fact(whiteSpace, cell_99, "wrap").
 diagram_fact(width, cell_100, 40).
 diagram_fact(width, cell_101, 260).
 diagram_fact(width, cell_102, 200).
+diagram_fact(width, cell_103, 40).
 diagram_fact(width, cell_104, 40).
-diagram_fact(width, cell_105, 40).
-diagram_fact(width, cell_106, 375).
-diagram_fact(width, cell_107, 305).
-diagram_fact(width, cell_108, 40).
-diagram_fact(width, cell_109, 285).
+diagram_fact(width, cell_105, 375).
+diagram_fact(width, cell_106, 305).
+diagram_fact(width, cell_107, 40).
+diagram_fact(width, cell_108, 285).
+diagram_fact(width, cell_109, 225).
 diagram_fact(width, cell_11, 40).
-diagram_fact(width, cell_110, 225).
-diagram_fact(width, cell_111, 40).
-diagram_fact(width, cell_113, 40).
-diagram_fact(width, cell_114, 260).
-diagram_fact(width, cell_115, 200).
+diagram_fact(width, cell_110, 40).
+diagram_fact(width, cell_112, 40).
+diagram_fact(width, cell_113, 260).
+diagram_fact(width, cell_114, 200).
+diagram_fact(width, cell_116, 40).
 diagram_fact(width, cell_117, 40).
-diagram_fact(width, cell_118, 40).
-diagram_fact(width, cell_119, 260).
+diagram_fact(width, cell_118, 260).
+diagram_fact(width, cell_119, 200).
 diagram_fact(width, cell_12, 40).
-diagram_fact(width, cell_120, 200).
+diagram_fact(width, cell_121, 40).
 diagram_fact(width, cell_122, 40).
-diagram_fact(width, cell_123, 40).
-diagram_fact(width, cell_124, 260).
-diagram_fact(width, cell_125, 200).
+diagram_fact(width, cell_123, 260).
+diagram_fact(width, cell_124, 200).
+diagram_fact(width, cell_126, 40).
 diagram_fact(width, cell_127, 40).
-diagram_fact(width, cell_128, 40).
 diagram_fact(width, cell_13, 260).
 diagram_fact(width, cell_14, 200).
 diagram_fact(width, cell_16, 40).
@@ -1909,29 +1888,29 @@ diagram_fact(width, cell_99, 40).
 diagram_fact(x, cell_100, 230).
 diagram_fact(x, cell_101, 650).
 diagram_fact(x, cell_102, 680).
-diagram_fact(x, cell_104, 890).
-diagram_fact(x, cell_105, 630).
-diagram_fact(x, cell_106, 1160).
-diagram_fact(x, cell_107, 1190).
-diagram_fact(x, cell_108, 1140).
-diagram_fact(x, cell_109, 1197.5).
+diagram_fact(x, cell_103, 890).
+diagram_fact(x, cell_104, 630).
+diagram_fact(x, cell_105, 1160).
+diagram_fact(x, cell_106, 1190).
+diagram_fact(x, cell_107, 1140).
+diagram_fact(x, cell_108, 1197.5).
+diagram_fact(x, cell_109, 1227.5).
 diagram_fact(x, cell_11, 450).
-diagram_fact(x, cell_110, 1227.5).
-diagram_fact(x, cell_111, 1177.5).
-diagram_fact(x, cell_113, 1515).
-diagram_fact(x, cell_114, 250).
-diagram_fact(x, cell_115, 280).
-diagram_fact(x, cell_117, 490).
-diagram_fact(x, cell_118, 230).
-diagram_fact(x, cell_119, 640).
+diagram_fact(x, cell_110, 1177.5).
+diagram_fact(x, cell_112, 1515).
+diagram_fact(x, cell_113, 250).
+diagram_fact(x, cell_114, 280).
+diagram_fact(x, cell_116, 490).
+diagram_fact(x, cell_117, 230).
+diagram_fact(x, cell_118, 640).
+diagram_fact(x, cell_119, 670).
 diagram_fact(x, cell_12, 190).
-diagram_fact(x, cell_120, 670).
-diagram_fact(x, cell_122, 880).
-diagram_fact(x, cell_123, 620).
-diagram_fact(x, cell_124, 1010).
-diagram_fact(x, cell_125, 1040).
-diagram_fact(x, cell_127, 1250).
-diagram_fact(x, cell_128, 990).
+diagram_fact(x, cell_121, 880).
+diagram_fact(x, cell_122, 620).
+diagram_fact(x, cell_123, 1010).
+diagram_fact(x, cell_124, 1040).
+diagram_fact(x, cell_126, 1250).
+diagram_fact(x, cell_127, 990).
 diagram_fact(x, cell_13, 570).
 diagram_fact(x, cell_14, 600).
 diagram_fact(x, cell_16, 810).
@@ -2008,29 +1987,29 @@ diagram_fact(x, cell_99, 490).
 diagram_fact(y, cell_100, 3325).
 diagram_fact(y, cell_101, 3280).
 diagram_fact(y, cell_102, 3325).
+diagram_fact(y, cell_103, 3325).
 diagram_fact(y, cell_104, 3325).
-diagram_fact(y, cell_105, 3325).
-diagram_fact(y, cell_106, 3280).
+diagram_fact(y, cell_105, 3280).
+diagram_fact(y, cell_106, 3325).
 diagram_fact(y, cell_107, 3325).
-diagram_fact(y, cell_108, 3325).
-diagram_fact(y, cell_109, 3520).
+diagram_fact(y, cell_108, 3520).
+diagram_fact(y, cell_109, 3565).
 diagram_fact(y, cell_11, 385).
 diagram_fact(y, cell_110, 3565).
-diagram_fact(y, cell_111, 3565).
-diagram_fact(y, cell_113, 3325).
-diagram_fact(y, cell_114, 2602.5).
-diagram_fact(y, cell_115, 2647.5).
+diagram_fact(y, cell_112, 3325).
+diagram_fact(y, cell_113, 2602.5).
+diagram_fact(y, cell_114, 2647.5).
+diagram_fact(y, cell_116, 2647.5).
 diagram_fact(y, cell_117, 2647.5).
-diagram_fact(y, cell_118, 2647.5).
-diagram_fact(y, cell_119, 2602.5).
+diagram_fact(y, cell_118, 2602.5).
+diagram_fact(y, cell_119, 2647.5).
 diagram_fact(y, cell_12, 385).
-diagram_fact(y, cell_120, 2647.5).
+diagram_fact(y, cell_121, 2647.5).
 diagram_fact(y, cell_122, 2647.5).
-diagram_fact(y, cell_123, 2647.5).
-diagram_fact(y, cell_124, 2362.5).
-diagram_fact(y, cell_125, 2407.5).
+diagram_fact(y, cell_123, 2362.5).
+diagram_fact(y, cell_124, 2407.5).
+diagram_fact(y, cell_126, 2407.5).
 diagram_fact(y, cell_127, 2407.5).
-diagram_fact(y, cell_128, 2407.5).
 diagram_fact(y, cell_13, 340).
 diagram_fact(y, cell_14, 385).
 diagram_fact(y, cell_16, 385).
@@ -2108,34 +2087,33 @@ das_fact(kind,cell_10,edge).
 das_fact(kind,cell_100,ellipse).
 das_fact(kind,cell_101,rectangle).
 das_fact(kind,cell_102,rectangle).
-das_fact(kind,cell_103,edge).
+das_fact(kind,cell_103,ellipse).
 das_fact(kind,cell_104,ellipse).
-das_fact(kind,cell_105,ellipse).
+das_fact(kind,cell_105,rectangle).
 das_fact(kind,cell_106,rectangle).
-das_fact(kind,cell_107,rectangle).
-das_fact(kind,cell_108,ellipse).
+das_fact(kind,cell_107,ellipse).
+das_fact(kind,cell_108,rectangle).
 das_fact(kind,cell_109,rectangle).
 das_fact(kind,cell_11,ellipse).
-das_fact(kind,cell_110,rectangle).
-das_fact(kind,cell_111,ellipse).
-das_fact(kind,cell_112,edge).
-das_fact(kind,cell_113,ellipse).
+das_fact(kind,cell_110,ellipse).
+das_fact(kind,cell_111,edge).
+das_fact(kind,cell_112,ellipse).
+das_fact(kind,cell_113,rectangle).
 das_fact(kind,cell_114,rectangle).
-das_fact(kind,cell_115,rectangle).
-das_fact(kind,cell_116,edge).
+das_fact(kind,cell_115,edge).
+das_fact(kind,cell_116,ellipse).
 das_fact(kind,cell_117,ellipse).
-das_fact(kind,cell_118,ellipse).
+das_fact(kind,cell_118,rectangle).
 das_fact(kind,cell_119,rectangle).
 das_fact(kind,cell_12,ellipse).
-das_fact(kind,cell_120,rectangle).
-das_fact(kind,cell_121,edge).
+das_fact(kind,cell_120,edge).
+das_fact(kind,cell_121,ellipse).
 das_fact(kind,cell_122,ellipse).
-das_fact(kind,cell_123,ellipse).
+das_fact(kind,cell_123,rectangle).
 das_fact(kind,cell_124,rectangle).
-das_fact(kind,cell_125,rectangle).
-das_fact(kind,cell_126,edge).
+das_fact(kind,cell_125,edge).
+das_fact(kind,cell_126,ellipse).
 das_fact(kind,cell_127,ellipse).
-das_fact(kind,cell_128,ellipse).
 das_fact(kind,cell_13,rectangle).
 das_fact(kind,cell_14,rectangle).
 das_fact(kind,cell_15,edge).
@@ -2233,29 +2211,29 @@ das_fact(kind,cell_99,ellipse).
 das_fact(name, cell_100, "in").
 das_fact(name, cell_101, "design rule edge containment").
 das_fact(name, cell_102, "var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-das_fact(name, cell_104, "out").
-das_fact(name, cell_105, "in").
-das_fact(name, cell_106, "prolog convert to json").
-das_fact(name, cell_107, "var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-das_fact(name, cell_108, "in").
-das_fact(name, cell_109, "finish").
+das_fact(name, cell_103, "out").
+das_fact(name, cell_104, "in").
+das_fact(name, cell_105, "prolog convert to json").
+das_fact(name, cell_106, "var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(name, cell_107, "in").
+das_fact(name, cell_108, "finish").
+das_fact(name, cell_109, "// console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_11, "out").
-das_fact(name, cell_110, "// console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-das_fact(name, cell_111, "in").
-das_fact(name, cell_113, "out").
-das_fact(name, cell_114, "edge containment 1").
-das_fact(name, cell_115, "var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-das_fact(name, cell_117, "out").
-das_fact(name, cell_118, "in").
-das_fact(name, cell_119, "edge containment 2").
+das_fact(name, cell_110, "in").
+das_fact(name, cell_112, "out").
+das_fact(name, cell_113, "edge containment 1").
+das_fact(name, cell_114, "var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(name, cell_116, "out").
+das_fact(name, cell_117, "in").
+das_fact(name, cell_118, "edge containment 2").
+das_fact(name, cell_119, "var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_12, "in").
-das_fact(name, cell_120, "var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-das_fact(name, cell_122, "out").
-das_fact(name, cell_123, "in").
-das_fact(name, cell_124, "direct containment").
-das_fact(name, cell_125, "var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
-das_fact(name, cell_127, "out").
-das_fact(name, cell_128, "in").
+das_fact(name, cell_121, "out").
+das_fact(name, cell_122, "in").
+das_fact(name, cell_123, "direct containment").
+das_fact(name, cell_124, "var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(name, cell_126, "out").
+das_fact(name, cell_127, "in").
 das_fact(name, cell_13, "diagramparser").
 das_fact(name, cell_14, "var x = sfdiagramparser (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
 das_fact(name, cell_16, "out").
@@ -2334,34 +2312,33 @@ das_fact(color,cell_10,"-").
 das_fact(color,cell_100,"green").
 das_fact(color,cell_101,"-").
 das_fact(color,cell_102,"red").
-das_fact(color,cell_103,"-").
-das_fact(color,cell_104,"yellow").
-das_fact(color,cell_105,"green").
-das_fact(color,cell_106,"-").
-das_fact(color,cell_107,"red").
-das_fact(color,cell_108,"green").
-das_fact(color,cell_109,"-").
+das_fact(color,cell_103,"yellow").
+das_fact(color,cell_104,"green").
+das_fact(color,cell_105,"-").
+das_fact(color,cell_106,"red").
+das_fact(color,cell_107,"green").
+das_fact(color,cell_108,"-").
+das_fact(color,cell_109,"red").
 das_fact(color,cell_11,"yellow").
-das_fact(color,cell_110,"red").
-das_fact(color,cell_111,"green").
-das_fact(color,cell_112,"-").
-das_fact(color,cell_113,"yellow").
-das_fact(color,cell_114,"-").
-das_fact(color,cell_115,"red").
-das_fact(color,cell_116,"-").
-das_fact(color,cell_117,"yellow").
-das_fact(color,cell_118,"green").
-das_fact(color,cell_119,"-").
+das_fact(color,cell_110,"green").
+das_fact(color,cell_111,"-").
+das_fact(color,cell_112,"yellow").
+das_fact(color,cell_113,"-").
+das_fact(color,cell_114,"red").
+das_fact(color,cell_115,"-").
+das_fact(color,cell_116,"yellow").
+das_fact(color,cell_117,"green").
+das_fact(color,cell_118,"-").
+das_fact(color,cell_119,"red").
 das_fact(color,cell_12,"green").
-das_fact(color,cell_120,"red").
-das_fact(color,cell_121,"-").
-das_fact(color,cell_122,"yellow").
-das_fact(color,cell_123,"green").
-das_fact(color,cell_124,"-").
-das_fact(color,cell_125,"red").
-das_fact(color,cell_126,"-").
-das_fact(color,cell_127,"yellow").
-das_fact(color,cell_128,"green").
+das_fact(color,cell_120,"-").
+das_fact(color,cell_121,"yellow").
+das_fact(color,cell_122,"green").
+das_fact(color,cell_123,"-").
+das_fact(color,cell_124,"red").
+das_fact(color,cell_125,"-").
+das_fact(color,cell_126,"yellow").
+das_fact(color,cell_127,"green").
 das_fact(color,cell_13,"-").
 das_fact(color,cell_14,"red").
 das_fact(color,cell_15,"-").
@@ -2468,98 +2445,98 @@ das_fact(bbL,cell_102,680).
   das_fact(bbT,cell_102,3325).
   das_fact(bbR,cell_102,880).
   das_fact(bbB,cell_102,3370).
-das_fact(bbL,cell_104,890).
+das_fact(bbL,cell_103,890).
+  das_fact(bbT,cell_103,3325).
+  das_fact(bbR,cell_103,930).
+  das_fact(bbB,cell_103,3365).
+das_fact(bbL,cell_104,630).
   das_fact(bbT,cell_104,3325).
-  das_fact(bbR,cell_104,930).
+  das_fact(bbR,cell_104,670).
   das_fact(bbB,cell_104,3365).
-das_fact(bbL,cell_105,630).
-  das_fact(bbT,cell_105,3325).
-  das_fact(bbR,cell_105,670).
-  das_fact(bbB,cell_105,3365).
-das_fact(bbL,cell_106,1160).
-  das_fact(bbT,cell_106,3280).
-  das_fact(bbR,cell_106,1535).
-  das_fact(bbB,cell_106,3410).
-das_fact(bbL,cell_107,1190).
+das_fact(bbL,cell_105,1160).
+  das_fact(bbT,cell_105,3280).
+  das_fact(bbR,cell_105,1535).
+  das_fact(bbB,cell_105,3410).
+das_fact(bbL,cell_106,1190).
+  das_fact(bbT,cell_106,3325).
+  das_fact(bbR,cell_106,1495).
+  das_fact(bbB,cell_106,3390).
+das_fact(bbL,cell_107,1140).
   das_fact(bbT,cell_107,3325).
-  das_fact(bbR,cell_107,1495).
-  das_fact(bbB,cell_107,3390).
-das_fact(bbL,cell_108,1140).
-  das_fact(bbT,cell_108,3325).
-  das_fact(bbR,cell_108,1180).
-  das_fact(bbB,cell_108,3365).
-das_fact(bbL,cell_109,1197.5).
-  das_fact(bbT,cell_109,3520).
-  das_fact(bbR,cell_109,1482.5).
-  das_fact(bbB,cell_109,3650).
+  das_fact(bbR,cell_107,1180).
+  das_fact(bbB,cell_107,3365).
+das_fact(bbL,cell_108,1197.5).
+  das_fact(bbT,cell_108,3520).
+  das_fact(bbR,cell_108,1482.5).
+  das_fact(bbB,cell_108,3650).
+das_fact(bbL,cell_109,1227.5).
+  das_fact(bbT,cell_109,3565).
+  das_fact(bbR,cell_109,1452.5).
+  das_fact(bbB,cell_109,3610).
 das_fact(bbL,cell_11,450).
   das_fact(bbT,cell_11,385).
   das_fact(bbR,cell_11,490).
   das_fact(bbB,cell_11,425).
-das_fact(bbL,cell_110,1227.5).
+das_fact(bbL,cell_110,1177.5).
   das_fact(bbT,cell_110,3565).
-  das_fact(bbR,cell_110,1452.5).
-  das_fact(bbB,cell_110,3610).
-das_fact(bbL,cell_111,1177.5).
-  das_fact(bbT,cell_111,3565).
-  das_fact(bbR,cell_111,1217.5).
-  das_fact(bbB,cell_111,3605).
-das_fact(bbL,cell_113,1515).
-  das_fact(bbT,cell_113,3325).
-  das_fact(bbR,cell_113,1555).
-  das_fact(bbB,cell_113,3365).
-das_fact(bbL,cell_114,250).
-  das_fact(bbT,cell_114,2602.5).
-  das_fact(bbR,cell_114,510).
-  das_fact(bbB,cell_114,2732.5).
-das_fact(bbL,cell_115,280).
-  das_fact(bbT,cell_115,2647.5).
-  das_fact(bbR,cell_115,480).
-  das_fact(bbB,cell_115,2692.5).
-das_fact(bbL,cell_117,490).
+  das_fact(bbR,cell_110,1217.5).
+  das_fact(bbB,cell_110,3605).
+das_fact(bbL,cell_112,1515).
+  das_fact(bbT,cell_112,3325).
+  das_fact(bbR,cell_112,1555).
+  das_fact(bbB,cell_112,3365).
+das_fact(bbL,cell_113,250).
+  das_fact(bbT,cell_113,2602.5).
+  das_fact(bbR,cell_113,510).
+  das_fact(bbB,cell_113,2732.5).
+das_fact(bbL,cell_114,280).
+  das_fact(bbT,cell_114,2647.5).
+  das_fact(bbR,cell_114,480).
+  das_fact(bbB,cell_114,2692.5).
+das_fact(bbL,cell_116,490).
+  das_fact(bbT,cell_116,2647.5).
+  das_fact(bbR,cell_116,530).
+  das_fact(bbB,cell_116,2687.5).
+das_fact(bbL,cell_117,230).
   das_fact(bbT,cell_117,2647.5).
-  das_fact(bbR,cell_117,530).
+  das_fact(bbR,cell_117,270).
   das_fact(bbB,cell_117,2687.5).
-das_fact(bbL,cell_118,230).
-  das_fact(bbT,cell_118,2647.5).
-  das_fact(bbR,cell_118,270).
-  das_fact(bbB,cell_118,2687.5).
-das_fact(bbL,cell_119,640).
-  das_fact(bbT,cell_119,2602.5).
-  das_fact(bbR,cell_119,900).
-  das_fact(bbB,cell_119,2732.5).
+das_fact(bbL,cell_118,640).
+  das_fact(bbT,cell_118,2602.5).
+  das_fact(bbR,cell_118,900).
+  das_fact(bbB,cell_118,2732.5).
+das_fact(bbL,cell_119,670).
+  das_fact(bbT,cell_119,2647.5).
+  das_fact(bbR,cell_119,870).
+  das_fact(bbB,cell_119,2692.5).
 das_fact(bbL,cell_12,190).
   das_fact(bbT,cell_12,385).
   das_fact(bbR,cell_12,230).
   das_fact(bbB,cell_12,425).
-das_fact(bbL,cell_120,670).
-  das_fact(bbT,cell_120,2647.5).
-  das_fact(bbR,cell_120,870).
-  das_fact(bbB,cell_120,2692.5).
-das_fact(bbL,cell_122,880).
+das_fact(bbL,cell_121,880).
+  das_fact(bbT,cell_121,2647.5).
+  das_fact(bbR,cell_121,920).
+  das_fact(bbB,cell_121,2687.5).
+das_fact(bbL,cell_122,620).
   das_fact(bbT,cell_122,2647.5).
-  das_fact(bbR,cell_122,920).
+  das_fact(bbR,cell_122,660).
   das_fact(bbB,cell_122,2687.5).
-das_fact(bbL,cell_123,620).
-  das_fact(bbT,cell_123,2647.5).
-  das_fact(bbR,cell_123,660).
-  das_fact(bbB,cell_123,2687.5).
-das_fact(bbL,cell_124,1010).
-  das_fact(bbT,cell_124,2362.5).
-  das_fact(bbR,cell_124,1270).
-  das_fact(bbB,cell_124,2492.5).
-das_fact(bbL,cell_125,1040).
-  das_fact(bbT,cell_125,2407.5).
-  das_fact(bbR,cell_125,1240).
-  das_fact(bbB,cell_125,2452.5).
-das_fact(bbL,cell_127,1250).
+das_fact(bbL,cell_123,1010).
+  das_fact(bbT,cell_123,2362.5).
+  das_fact(bbR,cell_123,1270).
+  das_fact(bbB,cell_123,2492.5).
+das_fact(bbL,cell_124,1040).
+  das_fact(bbT,cell_124,2407.5).
+  das_fact(bbR,cell_124,1240).
+  das_fact(bbB,cell_124,2452.5).
+das_fact(bbL,cell_126,1250).
+  das_fact(bbT,cell_126,2407.5).
+  das_fact(bbR,cell_126,1290).
+  das_fact(bbB,cell_126,2447.5).
+das_fact(bbL,cell_127,990).
   das_fact(bbT,cell_127,2407.5).
-  das_fact(bbR,cell_127,1290).
+  das_fact(bbR,cell_127,1030).
   das_fact(bbB,cell_127,2447.5).
-das_fact(bbL,cell_128,990).
-  das_fact(bbT,cell_128,2407.5).
-  das_fact(bbR,cell_128,1030).
-  das_fact(bbB,cell_128,2447.5).
 das_fact(bbL,cell_13,570).
   das_fact(bbT,cell_13,340).
   das_fact(bbR,cell_13,830).
@@ -2854,19 +2831,19 @@ das_fact(bbL,cell_99,490).
   das_fact(bbB,cell_99,3365).
 
 das_fact(direction,cell_100,input).
-das_fact(direction,cell_104,output).
-das_fact(direction,cell_105,input).
-das_fact(direction,cell_108,input).
+das_fact(direction,cell_103,output).
+das_fact(direction,cell_104,input).
+das_fact(direction,cell_107,input).
 das_fact(direction,cell_11,output).
-das_fact(direction,cell_111,input).
-das_fact(direction,cell_113,output).
-das_fact(direction,cell_117,output).
-das_fact(direction,cell_118,input).
+das_fact(direction,cell_110,input).
+das_fact(direction,cell_112,output).
+das_fact(direction,cell_116,output).
+das_fact(direction,cell_117,input).
 das_fact(direction,cell_12,input).
-das_fact(direction,cell_122,output).
-das_fact(direction,cell_123,input).
-das_fact(direction,cell_127,output).
-das_fact(direction,cell_128,input).
+das_fact(direction,cell_121,output).
+das_fact(direction,cell_122,input).
+das_fact(direction,cell_126,output).
+das_fact(direction,cell_127,input).
 das_fact(direction,cell_16,output).
 das_fact(direction,cell_17,input).
 das_fact(direction,cell_20,output).
@@ -2906,34 +2883,34 @@ das_fact(contains,cell_6,cell_100).
 das_fact(contains,cell_6,cell_101).
 das_fact(contains,cell_101,cell_102).
 das_fact(contains,cell_6,cell_102).
+das_fact(contains,cell_6,cell_103).
 das_fact(contains,cell_6,cell_104).
 das_fact(contains,cell_6,cell_105).
+das_fact(contains,cell_105,cell_106).
 das_fact(contains,cell_6,cell_106).
-das_fact(contains,cell_106,cell_107).
 das_fact(contains,cell_6,cell_107).
 das_fact(contains,cell_6,cell_108).
+das_fact(contains,cell_108,cell_109).
 das_fact(contains,cell_6,cell_109).
 das_fact(contains,cell_6,cell_11).
-das_fact(contains,cell_109,cell_110).
 das_fact(contains,cell_6,cell_110).
-das_fact(contains,cell_6,cell_111).
+das_fact(contains,cell_6,cell_112).
 das_fact(contains,cell_6,cell_113).
+das_fact(contains,cell_113,cell_114).
 das_fact(contains,cell_6,cell_114).
-das_fact(contains,cell_114,cell_115).
-das_fact(contains,cell_6,cell_115).
+das_fact(contains,cell_6,cell_116).
 das_fact(contains,cell_6,cell_117).
 das_fact(contains,cell_6,cell_118).
+das_fact(contains,cell_118,cell_119).
 das_fact(contains,cell_6,cell_119).
 das_fact(contains,cell_6,cell_12).
-das_fact(contains,cell_119,cell_120).
-das_fact(contains,cell_6,cell_120).
+das_fact(contains,cell_6,cell_121).
 das_fact(contains,cell_6,cell_122).
 das_fact(contains,cell_6,cell_123).
+das_fact(contains,cell_123,cell_124).
 das_fact(contains,cell_6,cell_124).
-das_fact(contains,cell_124,cell_125).
-das_fact(contains,cell_6,cell_125).
+das_fact(contains,cell_6,cell_126).
 das_fact(contains,cell_6,cell_127).
-das_fact(contains,cell_6,cell_128).
 das_fact(contains,cell_6,cell_13).
 das_fact(contains,cell_13,cell_14).
 das_fact(contains,cell_6,cell_14).
@@ -3026,17 +3003,17 @@ das_fact(contains,cell_6,cell_97).
 das_fact(contains,cell_96,cell_97).
 das_fact(contains,cell_6,cell_99).
 
+das_fact(contains,cell_101,cell_103).
 das_fact(contains,cell_101,cell_104).
-das_fact(contains,cell_101,cell_105).
-das_fact(contains,cell_106,cell_108).
-das_fact(contains,cell_106,cell_113).
-das_fact(contains,cell_109,cell_111).
-das_fact(contains,cell_114,cell_117).
-das_fact(contains,cell_114,cell_118).
-das_fact(contains,cell_119,cell_122).
-das_fact(contains,cell_119,cell_123).
-das_fact(contains,cell_124,cell_127).
-das_fact(contains,cell_124,cell_128).
+das_fact(contains,cell_105,cell_107).
+das_fact(contains,cell_105,cell_112).
+das_fact(contains,cell_108,cell_110).
+das_fact(contains,cell_113,cell_116).
+das_fact(contains,cell_113,cell_117).
+das_fact(contains,cell_118,cell_121).
+das_fact(contains,cell_118,cell_122).
+das_fact(contains,cell_123,cell_126).
+das_fact(contains,cell_123,cell_127).
 das_fact(contains,cell_13,cell_16).
 das_fact(contains,cell_13,cell_17).
 das_fact(contains,cell_22,cell_25).
@@ -3076,22 +3053,22 @@ das_fact(contains,cell_96,cell_100).
 das_fact(contains,cell_96,cell_99).
 
 das_fact(indirect_contains,cell_6,cell_102).
+das_fact(indirect_contains,cell_6,cell_103).
 das_fact(indirect_contains,cell_6,cell_104).
-das_fact(indirect_contains,cell_6,cell_105).
+das_fact(indirect_contains,cell_6,cell_106).
 das_fact(indirect_contains,cell_6,cell_107).
-das_fact(indirect_contains,cell_6,cell_108).
-das_fact(indirect_contains,cell_6,cell_113).
+das_fact(indirect_contains,cell_6,cell_112).
+das_fact(indirect_contains,cell_6,cell_109).
 das_fact(indirect_contains,cell_6,cell_110).
-das_fact(indirect_contains,cell_6,cell_111).
-das_fact(indirect_contains,cell_6,cell_115).
+das_fact(indirect_contains,cell_6,cell_114).
+das_fact(indirect_contains,cell_6,cell_116).
 das_fact(indirect_contains,cell_6,cell_117).
-das_fact(indirect_contains,cell_6,cell_118).
-das_fact(indirect_contains,cell_6,cell_120).
+das_fact(indirect_contains,cell_6,cell_119).
+das_fact(indirect_contains,cell_6,cell_121).
 das_fact(indirect_contains,cell_6,cell_122).
-das_fact(indirect_contains,cell_6,cell_123).
-das_fact(indirect_contains,cell_6,cell_125).
+das_fact(indirect_contains,cell_6,cell_124).
+das_fact(indirect_contains,cell_6,cell_126).
 das_fact(indirect_contains,cell_6,cell_127).
-das_fact(indirect_contains,cell_6,cell_128).
 das_fact(indirect_contains,cell_6,cell_14).
 das_fact(indirect_contains,cell_6,cell_16).
 das_fact(indirect_contains,cell_6,cell_17).
@@ -3150,22 +3127,22 @@ das_fact(indirect_contains,cell_6,cell_100).
 das_fact(indirect_contains,cell_6,cell_99).
 
 das_fact(direct_contains,cell_101,cell_102).
+das_fact(direct_contains,cell_101,cell_103).
 das_fact(direct_contains,cell_101,cell_104).
-das_fact(direct_contains,cell_101,cell_105).
-das_fact(direct_contains,cell_106,cell_107).
-das_fact(direct_contains,cell_106,cell_108).
-das_fact(direct_contains,cell_106,cell_113).
-das_fact(direct_contains,cell_109,cell_110).
-das_fact(direct_contains,cell_109,cell_111).
-das_fact(direct_contains,cell_114,cell_115).
-das_fact(direct_contains,cell_114,cell_117).
-das_fact(direct_contains,cell_114,cell_118).
-das_fact(direct_contains,cell_119,cell_120).
-das_fact(direct_contains,cell_119,cell_122).
-das_fact(direct_contains,cell_119,cell_123).
-das_fact(direct_contains,cell_124,cell_125).
-das_fact(direct_contains,cell_124,cell_127).
-das_fact(direct_contains,cell_124,cell_128).
+das_fact(direct_contains,cell_105,cell_106).
+das_fact(direct_contains,cell_105,cell_107).
+das_fact(direct_contains,cell_105,cell_112).
+das_fact(direct_contains,cell_108,cell_109).
+das_fact(direct_contains,cell_108,cell_110).
+das_fact(direct_contains,cell_113,cell_114).
+das_fact(direct_contains,cell_113,cell_116).
+das_fact(direct_contains,cell_113,cell_117).
+das_fact(direct_contains,cell_118,cell_119).
+das_fact(direct_contains,cell_118,cell_121).
+das_fact(direct_contains,cell_118,cell_122).
+das_fact(direct_contains,cell_123,cell_124).
+das_fact(direct_contains,cell_123,cell_126).
+das_fact(direct_contains,cell_123,cell_127).
 das_fact(direct_contains,cell_13,cell_14).
 das_fact(direct_contains,cell_13,cell_16).
 das_fact(direct_contains,cell_13,cell_17).
@@ -3193,11 +3170,11 @@ das_fact(direct_contains,cell_56,cell_57).
 das_fact(direct_contains,cell_56,cell_59).
 das_fact(direct_contains,cell_56,cell_60).
 das_fact(direct_contains,cell_6,cell_101).
-das_fact(direct_contains,cell_6,cell_106).
-das_fact(direct_contains,cell_6,cell_109).
-das_fact(direct_contains,cell_6,cell_114).
-das_fact(direct_contains,cell_6,cell_119).
-das_fact(direct_contains,cell_6,cell_124).
+das_fact(direct_contains,cell_6,cell_105).
+das_fact(direct_contains,cell_6,cell_108).
+das_fact(direct_contains,cell_6,cell_113).
+das_fact(direct_contains,cell_6,cell_118).
+das_fact(direct_contains,cell_6,cell_123).
 das_fact(direct_contains,cell_6,cell_13).
 das_fact(direct_contains,cell_6,cell_22).
 das_fact(direct_contains,cell_6,cell_27).
@@ -3249,11 +3226,10 @@ das_fact(direct_contains,cell_96,cell_97).
 das_fact(direct_contains,cell_96,cell_99).
 
 das_fact(direct_contains,cell_6,cell_10).
-das_fact(direct_contains,cell_6,cell_103).
-das_fact(direct_contains,cell_6,cell_112).
-das_fact(direct_contains,cell_6,cell_116).
-das_fact(direct_contains,cell_6,cell_121).
-das_fact(direct_contains,cell_6,cell_126).
+das_fact(direct_contains,cell_6,cell_111).
+das_fact(direct_contains,cell_6,cell_115).
+das_fact(direct_contains,cell_6,cell_120).
+das_fact(direct_contains,cell_6,cell_125).
 das_fact(direct_contains,cell_6,cell_15).
 das_fact(direct_contains,cell_6,cell_19).
 das_fact(direct_contains,cell_6,cell_24).
@@ -3274,3 +3250,99 @@ das_fact(direct_contains,cell_6,cell_93).
 das_fact(direct_contains,cell_6,cell_98).
 
 
+
+das_fact(codebox,cell_102,"var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_106,"var x = sfprolog2json (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_109,"// console.log (message.data);&lt;br&gt;done ();&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_114,"var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_119,"var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_124,"var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_14,"var x = sfdiagramparser (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_18,"var x = sfstyleexpander (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_23,"var x = sfasfactbase (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_28,"var x = sfdeleteblanklines (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_33,"var x = sfsortForPROLOG (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_38,"var x = sfdeleteTrailingSugar (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_41,"var rawbinary = sfreadfile (argv._[0]);&lt;br&gt;me.send (&quot;out&quot;, rawbinary, null);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_47,"var x = sfkinds (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_52,"var x = sfnames (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_57,"var x = sfcolor (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_62,"var x = sfboundingbox (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_67,"var x = sfdirection (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_72,"var x = sfcontains (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_77,"var x = sfcontainsport (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_82,"var x = sfindirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_87,"var x = sfedgecontainment3 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_9,"var u = sfuncompress (message.data);&lt;br&gt;me.send (&quot;out&quot;, u, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_92,"var x = sfsynccode (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+das_fact(codebox,cell_97,"var x = sfconnections (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;").
+
+das_fact(connection, cell_6, cell_10).
+das_fact(sender, cell_10, sender{component:uncompress,port:out}).
+das_fact(receiver, cell_10, receiver{component:diagramparser,port:in}).
+das_fact(connection, cell_6, cell_111).
+das_fact(sender, cell_111, sender{component:prolog convert to json,port:out}).
+das_fact(receiver, cell_111, receiver{component:finish,port:in}).
+das_fact(connection, cell_6, cell_115).
+das_fact(sender, cell_115, sender{component:edge containment 1,port:out}).
+das_fact(receiver, cell_115, receiver{component:edge containment 2,port:in}).
+das_fact(connection, cell_6, cell_120).
+das_fact(sender, cell_120, sender{component:edge containment 2,port:out}).
+das_fact(receiver, cell_120, receiver{component:edge containment 3,port:in}).
+das_fact(connection, cell_6, cell_125).
+das_fact(sender, cell_125, sender{component:direct containment,port:out}).
+das_fact(receiver, cell_125, receiver{component:edge containment 1,port:in}).
+das_fact(connection, cell_6, cell_15).
+das_fact(sender, cell_15, sender{component:diagramparser,port:out}).
+das_fact(receiver, cell_15, receiver{component:styleexpander,port:in}).
+das_fact(connection, cell_6, cell_19).
+das_fact(sender, cell_19, sender{component:styleexpander,port:out}).
+das_fact(receiver, cell_19, receiver{component:asfactbase,port:in}).
+das_fact(connection, cell_6, cell_24).
+das_fact(sender, cell_24, sender{component:asfactbase,port:out}).
+das_fact(receiver, cell_24, receiver{component:deleteblanklines,port:in}).
+das_fact(connection, cell_6, cell_29).
+das_fact(sender, cell_29, sender{component:deleteblanklines,port:out}).
+das_fact(receiver, cell_29, receiver{component:sortForPROLOG,port:in}).
+das_fact(connection, cell_6, cell_34).
+das_fact(sender, cell_34, sender{component:sortForPROLOG,port:out}).
+das_fact(receiver, cell_34, receiver{component:deleteTrailingSugar,port:in}).
+das_fact(connection, cell_6, cell_42).
+das_fact(sender, cell_42, sender{component:kickStart,port:out}).
+das_fact(receiver, cell_42, receiver{component:uncompress,port:in}).
+das_fact(connection, cell_6, cell_44).
+das_fact(sender, cell_44, sender{component:deleteTrailingSugar,port:out}).
+das_fact(receiver, cell_44, receiver{component:kinds,port:in}).
+das_fact(connection, cell_6, cell_48).
+das_fact(sender, cell_48, sender{component:kinds,port:out}).
+das_fact(receiver, cell_48, receiver{component:name,port:in}).
+das_fact(connection, cell_6, cell_53).
+das_fact(sender, cell_53, sender{component:name,port:out}).
+das_fact(receiver, cell_53, receiver{component:color,port:in}).
+das_fact(connection, cell_6, cell_58).
+das_fact(sender, cell_58, sender{component:color,port:out}).
+das_fact(receiver, cell_58, receiver{component:boundingbox,port:in}).
+das_fact(connection, cell_6, cell_63).
+das_fact(sender, cell_63, sender{component:boundingbox,port:out}).
+das_fact(receiver, cell_63, receiver{component:direction,port:in}).
+das_fact(connection, cell_6, cell_68).
+das_fact(sender, cell_68, sender{component:direction,port:out}).
+das_fact(receiver, cell_68, receiver{component:contains,port:in}).
+das_fact(connection, cell_6, cell_73).
+das_fact(sender, cell_73, sender{component:contains,port:out}).
+das_fact(receiver, cell_73, receiver{component:contains port,port:in}).
+das_fact(connection, cell_6, cell_78).
+das_fact(sender, cell_78, sender{component:contains port,port:out}).
+das_fact(receiver, cell_78, receiver{component:indirect containment,port:in}).
+das_fact(connection, cell_6, cell_83).
+das_fact(sender, cell_83, sender{component:indirect containment,port:out}).
+das_fact(receiver, cell_83, receiver{component:direct containment,port:in}).
+das_fact(connection, cell_6, cell_88).
+das_fact(sender, cell_88, sender{component:edge containment 3,port:out}).
+das_fact(receiver, cell_88, receiver{component:sync code,port:in}).
+das_fact(connection, cell_6, cell_93).
+das_fact(sender, cell_93, sender{component:sync code,port:out}).
+das_fact(receiver, cell_93, receiver{component:connections,port:in}).
+das_fact(connection, cell_6, cell_98).
+das_fact(sender, cell_98, sender{component:connections,port:out}).
+das_fact(receiver, cell_98, receiver{component:prolog convert to json,port:in}).

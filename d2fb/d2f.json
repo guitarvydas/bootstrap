@@ -14,7 +14,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_106",
+      "id":"cell_105",
       "inputs": ["in" ],
       "name":"prolog convert to json",
       "outputs": ["out" ],
@@ -25,7 +25,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_109",
+      "id":"cell_108",
       "inputs": ["in" ],
       "name":"finish",
       "outputs": [],
@@ -36,7 +36,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_114",
+      "id":"cell_113",
       "inputs": ["in" ],
       "name":"edge containment 1",
       "outputs": ["out" ],
@@ -47,7 +47,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_119",
+      "id":"cell_118",
       "inputs": ["in" ],
       "name":"edge containment 2",
       "outputs": ["out" ],
@@ -58,7 +58,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_124",
+      "id":"cell_123",
       "inputs": ["in" ],
       "name":"direct containment",
       "outputs": ["out" ],
@@ -199,10 +199,6 @@
 	  "senders": [ {"sender": {"component":"uncompress", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"design rule edge containment", "port":"out"}} ]
-	},
-	{
 	  "receivers": [ {"receiver": {"component":"finish", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"prolog convert to json", "port":"out"}} ]
 	},
@@ -287,7 +283,7 @@
 	  "senders": [ {"sender": {"component":"sync code", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"design rule edge containment", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"connections", "port":"out"}} ]
 	}
       ],
