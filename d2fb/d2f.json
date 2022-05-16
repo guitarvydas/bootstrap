@@ -195,7 +195,7 @@
 	  "senders": [ {"sender": {"component":"deleteTrailingSugar", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"name", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"kinds", "port":"out"}} ]
 	},
 	{
@@ -207,7 +207,7 @@
 	  "senders": [ {"sender": {"component":"color", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"direction", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"prolog convert to json", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"boundingbox", "port":"out"}} ]
 	},
 	{

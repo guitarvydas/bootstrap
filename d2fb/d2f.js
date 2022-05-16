@@ -369,10 +369,10 @@ function whole_makeconnections (container) {
     var conn29 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
     var conn30 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
     var conn31 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
-    var conn32 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
+    var conn32 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
     var conn33 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
     var conn34 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
-    var conn35 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "direction", etag: "in"}] };
+    var conn35 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
     var conn36 = {sender:{name: "direction", etag: "out"}, net: "NIY", receivers:  [{name: "contains", etag: "in"}] };
     var conn37 = {sender:{name: "contains", etag: "out"}, net: "NIY", receivers:  [{name: "contains port", etag: "in"}] };
     var conn38 = {sender:{name: "contains port", etag: "out"}, net: "NIY", receivers:  [{name: "direct containment", etag: "in"}] };

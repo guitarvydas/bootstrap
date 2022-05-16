@@ -56,7 +56,9 @@ function sfprolog2json (fb) {
     fs.writeFileSync( 'tempfb.pl', fb);
 
     var _result = execSync ("swipl -l 'rfb.pl' -g 'exec,halt.'");
-    console.log (_result.toString ());
+    // console.log (_result.toString ());
+    fs.writeFileSync ('tempfb.json', _result);
+    console.log ('see tempfb.pl and tempfb.json');
 }
 
 function queryAndExtendFB (fb, script) {
@@ -90,12 +92,12 @@ function sfnames (fb) {
 
 function sfcolor (fb) {
     console.error ('color');
-    return fb;
+    return queryAndExtendFB (fb, 'layercolor_query.bash');
 }
 
 function sfboundingbox (fb) {
     console.error ('bounding box');
-    return fb;
+    return queryAndExtendFB (fb, 'layerboundingbox_query.bash');
 }
 
 function sfdirection (fb) {
