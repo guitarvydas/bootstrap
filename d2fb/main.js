@@ -501,6 +501,87 @@ function finish (container, instancename) {
 
 
 
+var edge_containment_1_signature = {
+    name: "edge_containment_1",
+    inputs: [{name:"in", structure:["in"]}],
+    outputs: [{name:"out", structure:["out"]}]
+}
+
+
+var edge_containment_1_protoImplementation = {
+    name: "edge_containment_1",
+    kind: "leaf",
+    begin: function () {},
+    finish: function () {},
+    handler: function (me, message) {
+        var x = sfedgecontainment1 (message.data);
+me.send ("out", x, message);
+
+
+    }
+}
+
+function edge_containment_1 (container, instancename) {
+    let me = new Leaf (edge_containment_1_signature, edge_containment_1_protoImplementation, container, instancename);
+    return me;
+}
+
+
+
+var edge_containment_2_signature = {
+    name: "edge_containment_2",
+    inputs: [{name:"in", structure:["in"]}],
+    outputs: [{name:"out", structure:["out"]}]
+}
+
+
+var edge_containment_2_protoImplementation = {
+    name: "edge_containment_2",
+    kind: "leaf",
+    begin: function () {},
+    finish: function () {},
+    handler: function (me, message) {
+        var x = sfedgecontainment2 (message.data);
+me.send ("out", x, message);
+
+
+    }
+}
+
+function edge_containment_2 (container, instancename) {
+    let me = new Leaf (edge_containment_2_signature, edge_containment_2_protoImplementation, container, instancename);
+    return me;
+}
+
+
+
+var direct_containment_signature = {
+    name: "direct_containment",
+    inputs: [{name:"in", structure:["in"]}],
+    outputs: [{name:"out", structure:["out"]}]
+}
+
+
+var direct_containment_protoImplementation = {
+    name: "direct_containment",
+    kind: "leaf",
+    begin: function () {},
+    finish: function () {},
+    handler: function (me, message) {
+        var x = sfdirectcontainment (message.data);
+me.send ("out", x, message);
+
+
+    }
+}
+
+function direct_containment (container, instancename) {
+    let me = new Leaf (direct_containment_signature, direct_containment_protoImplementation, container, instancename);
+    return me;
+}
+
+
+
 var diagramparser_signature = {
     name: "diagramparser",
     inputs: [{name:"in", structure:["in"]}],
@@ -756,52 +837,58 @@ function whole_makechildren (container) {
       var child1 = new design_rule_edge_containment (container, "design rule edge containment");
         var child2 = new prolog_convert_to_json (container, "prolog convert to json");
         var child3 = new finish (container, "finish");
-        var child4 = new diagramparser (container, "diagramparser");
-        var child5 = new asfactbase (container, "asfactbase");
-        var child6 = new deleteblanklines (container, "deleteblanklines");
-        var child7 = new sortForPROLOG (container, "sortForPROLOG");
-        var child8 = new deleteTrailingSugar (container, "deleteTrailingSugar");
-        var child9 = new kickStart (container, "kickStart");
-        var child10 = new kinds (container, "kinds");
-        var child11 = new name (container, "name");
-        var child12 = new color (container, "color");
-        var child13 = new boundingbox (container, "boundingbox");
-        var child14 = new direction (container, "direction");
-        var child15 = new styleexpander (container, "styleexpander");
-        var child16 = new contains (container, "contains");
-        var child17 = new contains_port (container, "contains port");
-        var child18 = new uncompress (container, "uncompress");
-        var child19 = new direct_containment (container, "direct containment");
-        var child20 = new edge_containment (container, "edge containment");
-        var child21 = new sync_code (container, "sync code");
-        var child22 = new connections (container, "connections");
-      var children = [ {name: "design rule edge containment", runnable: child1}, {name: "prolog convert to json", runnable: child2}, {name: "finish", runnable: child3}, {name: "diagramparser", runnable: child4}, {name: "asfactbase", runnable: child5}, {name: "deleteblanklines", runnable: child6}, {name: "sortForPROLOG", runnable: child7}, {name: "deleteTrailingSugar", runnable: child8}, {name: "kickStart", runnable: child9}, {name: "kinds", runnable: child10}, {name: "name", runnable: child11}, {name: "color", runnable: child12}, {name: "boundingbox", runnable: child13}, {name: "direction", runnable: child14}, {name: "styleexpander", runnable: child15}, {name: "contains", runnable: child16}, {name: "contains port", runnable: child17}, {name: "uncompress", runnable: child18}, {name: "direct containment", runnable: child19}, {name: "edge containment", runnable: child20}, {name: "sync code", runnable: child21}, {name: "connections", runnable: child22} ];
+        var child4 = new edge_containment_1 (container, "edge containment 1");
+        var child5 = new edge_containment_2 (container, "edge containment 2");
+        var child6 = new direct_containment (container, "direct containment");
+        var child7 = new diagramparser (container, "diagramparser");
+        var child8 = new asfactbase (container, "asfactbase");
+        var child9 = new deleteblanklines (container, "deleteblanklines");
+        var child10 = new sortForPROLOG (container, "sortForPROLOG");
+        var child11 = new deleteTrailingSugar (container, "deleteTrailingSugar");
+        var child12 = new kickStart (container, "kickStart");
+        var child13 = new kinds (container, "kinds");
+        var child14 = new name (container, "name");
+        var child15 = new color (container, "color");
+        var child16 = new boundingbox (container, "boundingbox");
+        var child17 = new direction (container, "direction");
+        var child18 = new styleexpander (container, "styleexpander");
+        var child19 = new contains (container, "contains");
+        var child20 = new contains_port (container, "contains port");
+        var child21 = new uncompress (container, "uncompress");
+        var child22 = new indirect_containment (container, "indirect containment");
+        var child23 = new edge_containment_3 (container, "edge containment 3");
+        var child24 = new sync_code (container, "sync code");
+        var child25 = new connections (container, "connections");
+      var children = [ {name: "design rule edge containment", runnable: child1}, {name: "prolog convert to json", runnable: child2}, {name: "finish", runnable: child3}, {name: "edge containment 1", runnable: child4}, {name: "edge containment 2", runnable: child5}, {name: "direct containment", runnable: child6}, {name: "diagramparser", runnable: child7}, {name: "asfactbase", runnable: child8}, {name: "deleteblanklines", runnable: child9}, {name: "sortForPROLOG", runnable: child10}, {name: "deleteTrailingSugar", runnable: child11}, {name: "kickStart", runnable: child12}, {name: "kinds", runnable: child13}, {name: "name", runnable: child14}, {name: "color", runnable: child15}, {name: "boundingbox", runnable: child16}, {name: "direction", runnable: child17}, {name: "styleexpander", runnable: child18}, {name: "contains", runnable: child19}, {name: "contains port", runnable: child20}, {name: "uncompress", runnable: child21}, {name: "indirect containment", runnable: child22}, {name: "edge containment 3", runnable: child23}, {name: "sync code", runnable: child24}, {name: "connections", runnable: child25} ];
       return children;
 }
 
 function whole_makeconnections (container) {
-    var conn23 = {sender:{name: "uncompress", etag: "out"}, net: "NIY", receivers:  [{name: "diagramparser", etag: "in"}] };
-    var conn24 = {sender:{name: "design rule edge containment", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
-    var conn25 = {sender:{name: "prolog convert to json", etag: "out"}, net: "NIY", receivers:  [{name: "finish", etag: "in"}] };
-    var conn26 = {sender:{name: "diagramparser", etag: "out"}, net: "NIY", receivers:  [{name: "styleexpander", etag: "in"}] };
-    var conn27 = {sender:{name: "styleexpander", etag: "out"}, net: "NIY", receivers:  [{name: "asfactbase", etag: "in"}] };
-    var conn28 = {sender:{name: "asfactbase", etag: "out"}, net: "NIY", receivers:  [{name: "deleteblanklines", etag: "in"}] };
-    var conn29 = {sender:{name: "deleteblanklines", etag: "out"}, net: "NIY", receivers:  [{name: "sortForPROLOG", etag: "in"}] };
-    var conn30 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
-    var conn31 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
-    var conn32 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
-    var conn33 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
-    var conn34 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
-    var conn35 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
-    var conn36 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "direction", etag: "in"}] };
-    var conn37 = {sender:{name: "direction", etag: "out"}, net: "NIY", receivers:  [{name: "contains", etag: "in"}] };
-    var conn38 = {sender:{name: "contains", etag: "out"}, net: "NIY", receivers:  [{name: "contains port", etag: "in"}] };
-    var conn39 = {sender:{name: "contains port", etag: "out"}, net: "NIY", receivers:  [{name: "direct containment", etag: "in"}] };
-    var conn40 = {sender:{name: "direct containment", etag: "out"}, net: "NIY", receivers:  [{name: "edge containment", etag: "in"}] };
-    var conn41 = {sender:{name: "edge containment", etag: "out"}, net: "NIY", receivers:  [{name: "sync code", etag: "in"}] };
-    var conn42 = {sender:{name: "sync code", etag: "out"}, net: "NIY", receivers:  [{name: "connections", etag: "in"}] };
-    var conn43 = {sender:{name: "connections", etag: "out"}, net: "NIY", receivers:  [{name: "design rule edge containment", etag: "in"}] };
-    var connections = [ conn23, conn24, conn25, conn26, conn27, conn28, conn29, conn30, conn31, conn32, conn33, conn34, conn35, conn36, conn37, conn38, conn39, conn40, conn41, conn42, conn43 ];
+    var conn26 = {sender:{name: "uncompress", etag: "out"}, net: "NIY", receivers:  [{name: "diagramparser", etag: "in"}] };
+    var conn27 = {sender:{name: "design rule edge containment", etag: "out"}, net: "NIY", receivers:  [{name: "prolog convert to json", etag: "in"}] };
+    var conn28 = {sender:{name: "prolog convert to json", etag: "out"}, net: "NIY", receivers:  [{name: "finish", etag: "in"}] };
+    var conn29 = {sender:{name: "edge containment 1", etag: "out"}, net: "NIY", receivers:  [{name: "edge containment 2", etag: "in"}] };
+    var conn30 = {sender:{name: "edge containment 2", etag: "out"}, net: "NIY", receivers:  [{name: "edge containment 3", etag: "in"}] };
+    var conn31 = {sender:{name: "direct containment", etag: "out"}, net: "NIY", receivers:  [{name: "edge containment 1", etag: "in"}] };
+    var conn32 = {sender:{name: "diagramparser", etag: "out"}, net: "NIY", receivers:  [{name: "styleexpander", etag: "in"}] };
+    var conn33 = {sender:{name: "styleexpander", etag: "out"}, net: "NIY", receivers:  [{name: "asfactbase", etag: "in"}] };
+    var conn34 = {sender:{name: "asfactbase", etag: "out"}, net: "NIY", receivers:  [{name: "deleteblanklines", etag: "in"}] };
+    var conn35 = {sender:{name: "deleteblanklines", etag: "out"}, net: "NIY", receivers:  [{name: "sortForPROLOG", etag: "in"}] };
+    var conn36 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
+    var conn37 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
+    var conn38 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
+    var conn39 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
+    var conn40 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
+    var conn41 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
+    var conn42 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "direction", etag: "in"}] };
+    var conn43 = {sender:{name: "direction", etag: "out"}, net: "NIY", receivers:  [{name: "contains", etag: "in"}] };
+    var conn44 = {sender:{name: "contains", etag: "out"}, net: "NIY", receivers:  [{name: "contains port", etag: "in"}] };
+    var conn45 = {sender:{name: "contains port", etag: "out"}, net: "NIY", receivers:  [{name: "indirect containment", etag: "in"}] };
+    var conn46 = {sender:{name: "indirect containment", etag: "out"}, net: "NIY", receivers:  [{name: "direct containment", etag: "in"}] };
+    var conn47 = {sender:{name: "edge containment 3", etag: "out"}, net: "NIY", receivers:  [{name: "sync code", etag: "in"}] };
+    var conn48 = {sender:{name: "sync code", etag: "out"}, net: "NIY", receivers:  [{name: "connections", etag: "in"}] };
+    var conn49 = {sender:{name: "connections", etag: "out"}, net: "NIY", receivers:  [{name: "design rule edge containment", etag: "in"}] };
+    var connections = [ conn26, conn27, conn28, conn29, conn30, conn31, conn32, conn33, conn34, conn35, conn36, conn37, conn38, conn39, conn40, conn41, conn42, conn43, conn44, conn45, conn46, conn47, conn48, conn49 ];
     return connections;
 }
 
@@ -993,55 +1080,55 @@ function uncompress (container, instancename) {
 
 
 
-var direct_containment_signature = {
-    name: "direct_containment",
+var indirect_containment_signature = {
+    name: "indirect_containment",
     inputs: [{name:"in", structure:["in"]}],
     outputs: [{name:"out", structure:["out"]}]
 }
 
 
-var direct_containment_protoImplementation = {
-    name: "direct_containment",
+var indirect_containment_protoImplementation = {
+    name: "indirect_containment",
     kind: "leaf",
     begin: function () {},
     finish: function () {},
     handler: function (me, message) {
-        var x = sfdirectcontainment (message.data);
+        var x = sfindirectcontainment (message.data);
 me.send ("out", x, message);
 
 
     }
 }
 
-function direct_containment (container, instancename) {
-    let me = new Leaf (direct_containment_signature, direct_containment_protoImplementation, container, instancename);
+function indirect_containment (container, instancename) {
+    let me = new Leaf (indirect_containment_signature, indirect_containment_protoImplementation, container, instancename);
     return me;
 }
 
 
 
-var edge_containment_signature = {
-    name: "edge_containment",
+var edge_containment_3_signature = {
+    name: "edge_containment_3",
     inputs: [{name:"in", structure:["in"]}],
     outputs: [{name:"out", structure:["out"]}]
 }
 
 
-var edge_containment_protoImplementation = {
-    name: "edge_containment",
+var edge_containment_3_protoImplementation = {
+    name: "edge_containment_3",
     kind: "leaf",
     begin: function () {},
     finish: function () {},
     handler: function (me, message) {
-        var x = sfedgecontainment (message.data);
+        var x = sfedgecontainment3 (message.data);
 me.send ("out", x, message);
 
 
     }
 }
 
-function edge_containment (container, instancename) {
-    let me = new Leaf (edge_containment_signature, edge_containment_protoImplementation, container, instancename);
+function edge_containment_3 (container, instancename) {
+    let me = new Leaf (edge_containment_3_signature, edge_containment_3_protoImplementation, container, instancename);
     return me;
 }
 
@@ -1205,27 +1292,45 @@ function sfboundingbox (fb) {
 
 function sfdirection (fb) {
     console.error ('direction');
-    return fb;
+    return queryAndExtendFB (fb, 'layerdirection_query.bash');
 }
 
 function sfcontains (fb) {
     console.error ('contains');
-    return fb;
+    return queryAndExtendFB (fb, 'layerallcontains_query.bash');
 }
 
 
 function sfcontainsport (fb) {
     console.error ('contains port');
+    return queryAndExtendFB (fb, 'layer4_query.bash');
+}
+
+function sfindirectcontainment (fb) {
+    console.error ('indirect containment');
+    return queryAndExtendFB (fb, 'layer5_query.bash');
     return fb;
 }
 
 function sfdirectcontainment (fb) {
     console.error ('direct containment');
+    return queryAndExtendFB (fb, 'layer6_query.bash');
     return fb;
 }
 
-function sfedgecontainment (fb) {
-    console.error ('edge containment');
+function sfedgecontainment1 (fb) {
+    console.error ('edge containment 1');
+    // return queryAndExtendFB (fb, 'layer6.bash');
+    return fb;
+}
+
+function sfedgecontainment2 (fb) {
+    console.error ('edge containment 2');
+    return fb;
+}
+
+function sfedgecontainment3 (fb) {
+    console.error ('edge containment 3');
     return fb;
 }
 

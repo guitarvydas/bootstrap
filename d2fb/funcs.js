@@ -103,27 +103,45 @@ function sfboundingbox (fb) {
 
 function sfdirection (fb) {
     console.error ('direction');
-    return fb;
+    return queryAndExtendFB (fb, 'layerdirection_query.bash');
 }
 
 function sfcontains (fb) {
     console.error ('contains');
-    return fb;
+    return queryAndExtendFB (fb, 'layerallcontains_query.bash');
 }
 
 
 function sfcontainsport (fb) {
     console.error ('contains port');
+    return queryAndExtendFB (fb, 'layer4_query.bash');
+}
+
+function sfindirectcontainment (fb) {
+    console.error ('indirect containment');
+    return queryAndExtendFB (fb, 'layer5_query.bash');
     return fb;
 }
 
 function sfdirectcontainment (fb) {
     console.error ('direct containment');
+    return queryAndExtendFB (fb, 'layer6_query.bash');
     return fb;
 }
 
-function sfedgecontainment (fb) {
-    console.error ('edge containment');
+function sfedgecontainment1 (fb) {
+    console.error ('edge containment 1');
+    // return queryAndExtendFB (fb, 'layer6.bash');
+    return fb;
+}
+
+function sfedgecontainment2 (fb) {
+    console.error ('edge containment 2');
+    return fb;
+}
+
+function sfedgecontainment3 (fb) {
+    console.error ('edge containment 3');
     return fb;
 }
 

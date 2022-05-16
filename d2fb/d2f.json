@@ -36,6 +36,39 @@
     {
       "children": [],
       "connections": [],
+      "id":"cell_114",
+      "inputs": ["in" ],
+      "name":"edge containment 1",
+      "outputs": ["out" ],
+      "synccode":"var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_119",
+      "inputs": ["in" ],
+      "name":"edge containment 2",
+      "outputs": ["out" ],
+      "synccode":"var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_124",
+      "inputs": ["in" ],
+      "name":"direct containment",
+      "outputs": ["out" ],
+      "synccode":"var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
       "id":"cell_13",
       "inputs": ["in" ],
       "name":"diagramparser",
@@ -137,6 +170,9 @@
 	"design rule edge containment",
 	"prolog convert to json",
 	"finish",
+	"edge containment 1",
+	"edge containment 2",
+	"direct containment",
 	"diagramparser",
 	"asfactbase",
 	"deleteblanklines",
@@ -152,8 +188,8 @@
 	"contains",
 	"contains port",
 	"uncompress",
-	"direct containment",
-	"edge containment",
+	"indirect containment",
+	"edge containment 3",
 	"sync code",
 	"connections"
       ],
@@ -169,6 +205,18 @@
 	{
 	  "receivers": [ {"receiver": {"component":"finish", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"prolog convert to json", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"edge containment 2", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"edge containment 1", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"edge containment 3", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"edge containment 2", "port":"out"}} ]
+	},
+	{
+	  "receivers": [ {"receiver": {"component":"edge containment 1", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"direct containment", "port":"out"}} ]
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"styleexpander", "port":"in"}} ],
@@ -223,16 +271,16 @@
 	  "senders": [ {"sender": {"component":"contains", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"direct containment", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"indirect containment", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"contains port", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"edge containment", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"direct containment", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"direct containment", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"indirect containment", "port":"out"}} ]
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"sync code", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"edge containment", "port":"out"}} ]
+	  "senders": [ {"sender": {"component":"edge containment 3", "port":"out"}} ]
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"connections", "port":"in"}} ],
@@ -322,9 +370,9 @@
       "connections": [],
       "id":"cell_81",
       "inputs": ["in" ],
-      "name":"direct containment",
+      "name":"indirect containment",
       "outputs": ["out" ],
-      "synccode":"var x = sfdirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+      "synccode":"var x = sfindirectcontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ],
   [
@@ -333,9 +381,9 @@
       "connections": [],
       "id":"cell_86",
       "inputs": ["in" ],
-      "name":"edge containment",
+      "name":"edge containment 3",
       "outputs": ["out" ],
-      "synccode":"var x = sfedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+      "synccode":"var x = sfedgecontainment3 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ],
   [

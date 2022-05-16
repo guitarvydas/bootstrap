@@ -40,6 +40,8 @@ ${das2fdir}/layer5 ${das2fdir} 1>&2 #<<>>fb.pl
 echo '** layer 6 - direct containment **' 1>&2
 ${das2fdir}/layer6 ${das2fdir} 1>&2 #<<>>fb.pl
 
+### stopped here
+
 # Layer edge containment 1
 echo '** layer edge containment 1 **' 1>&2
 ${das2fdir}/layeredgecontainment1 ${das2fdir} 1>&2 #<<>>fb.pl
