@@ -82,6 +82,7 @@ function query (fb, dir, script) {
     fs.writeFileSync ('fb.pl', fb);
 
     var _newfacts = execSync (dir + script).toString ();
+    console.error (_newfacts);
     return _newfacts;
 }
 
@@ -173,4 +174,10 @@ function sfdesignruleedgecontainment (fb) {
 
 function done () {
     console.error ('whole done');
+}
+
+function sfprobeFBd2f (fb) {
+    console.error ('sfprobeFBd2f');
+    fs.writeFileSync ('fbd2f.pl', fb);
+    return fb;
 }

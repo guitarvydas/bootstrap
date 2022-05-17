@@ -718,35 +718,35 @@ das_fact(codebox,cell_30,"me.send (&quot;click&quot;, true);").
 das_fact(codebox,cell_31,"&lt;div&gt;&amp;nbsp; &amp;nbsp; me.send (&quot;long phrase&quot;, &quot;I Want A Hamburger With Ketchup And Bacon And Pickles&quot;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;").
 
 das_fact(connection, cell_6, cell_10).
-das_fact(sender, cell_10, sender{component:Order Taker,port:phrase}).
-das_fact(receiver, cell_10, receiver{component:Phrase Parser,port:phrase}).
+das_fact(sender, cell_10, sender{component:"Order Taker",port:"phrase"}).
+das_fact(receiver, cell_10, receiver{component:"Phrase Parser",port:"phrase"}).
 das_fact(connection, cell_7, cell_10).
-das_fact(sender, cell_10, sender{component:Order Taker,port:phrase}).
-das_fact(receiver, cell_10, receiver{component:Phrase Parser,port:phrase}).
+das_fact(sender, cell_10, sender{component:"Order Taker",port:"phrase"}).
+das_fact(receiver, cell_10, receiver{component:"Phrase Parser",port:"phrase"}).
 das_fact(connection, cell_6, cell_13).
-das_fact(sender, cell_13, sender{component:HTML Button,port:click}).
-das_fact(receiver, cell_13, receiver{component:Phrase Faker,port:go}).
+das_fact(sender, cell_13, sender{component:"HTML Button",port:"click"}).
+das_fact(receiver, cell_13, receiver{component:"Phrase Faker",port:"go"}).
 das_fact(connection, cell_6, cell_16).
-das_fact(sender, cell_16, sender{component:Phrase Faker,port:short phrase}).
-das_fact(receiver, cell_16, receiver{component:Order Taker,port:phrase}).
+das_fact(sender, cell_16, sender{component:"Phrase Faker",port:"short phrase"}).
+das_fact(receiver, cell_16, receiver{component:"Order Taker",port:"phrase"}).
 das_fact(connection, cell_6, cell_18).
-das_fact(sender, cell_18, sender{component:Phrase Faker,port:long phrase}).
-das_fact(receiver, cell_18, receiver{component:Order Taker,port:phrase}).
+das_fact(sender, cell_18, sender{component:"Phrase Faker",port:"long phrase"}).
+das_fact(receiver, cell_18, receiver{component:"Order Taker",port:"phrase"}).
 das_fact(connection, cell_7, cell_23).
-das_fact(sender, cell_23, sender{component:Phrase Parser,port:order no choices}).
-das_fact(receiver, cell_23, receiver{component:Order Taker,port:food order}).
+das_fact(sender, cell_23, sender{component:"Phrase Parser",port:"order no choices"}).
+das_fact(receiver, cell_23, receiver{component:"Order Taker",port:"food order"}).
 das_fact(connection, cell_7, cell_23).
-das_fact(sender, cell_23, sender{component:Phrase Parser,port:order no choices}).
-das_fact(receiver, cell_23, receiver{component:Order Taker,port:food order}).
+das_fact(sender, cell_23, sender{component:"Phrase Parser",port:"order no choices"}).
+das_fact(receiver, cell_23, receiver{component:"Order Taker",port:"food order"}).
 das_fact(connection, cell_7, cell_26).
-das_fact(sender, cell_26, sender{component:Phrase Parser,port:order with choices}).
-das_fact(receiver, cell_26, receiver{component:Order Taker,port:food order}).
+das_fact(sender, cell_26, sender{component:"Phrase Parser",port:"order with choices"}).
+das_fact(receiver, cell_26, receiver{component:"Order Taker",port:"food order"}).
 das_fact(connection, cell_7, cell_26).
-das_fact(sender, cell_26, sender{component:Phrase Parser,port:order with choices}).
-das_fact(receiver, cell_26, receiver{component:Order Taker,port:food order}).
+das_fact(sender, cell_26, sender{component:"Phrase Parser",port:"order with choices"}).
+das_fact(receiver, cell_26, receiver{component:"Order Taker",port:"food order"}).
 das_fact(connection, cell_6, cell_8).
-das_fact(sender, cell_8, sender{component:Order Taker,port:food order}).
-das_fact(receiver, cell_8, receiver{component:Test Bench,port:food order}).
+das_fact(sender, cell_8, sender{component:"Order Taker",port:"food order"}).
+das_fact(receiver, cell_8, receiver{component:"Test Bench",port:"food order"}).
 das_fact(connection, cell_6, cell_8).
-das_fact(sender, cell_8, sender{component:Order Taker,port:food order}).
-das_fact(receiver, cell_8, receiver{component:Test Bench,port:food order}).
+das_fact(sender, cell_8, sender{component:"Order Taker",port:"food order"}).
+das_fact(receiver, cell_8, receiver{component:"Test Bench",port:"food order"}).

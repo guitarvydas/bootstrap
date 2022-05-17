@@ -162,6 +162,33 @@ function direct_containment (container, instancename) {
 
 
 
+var probeFBd2f_signature = {
+    name: "probeFBd2f",
+    inputs: [{name:"in", structure:["in"]}],
+    outputs: [{name:"out", structure:["out"]}]
+}
+
+
+var probeFBd2f_protoImplementation = {
+    name: "probeFBd2f",
+    kind: "leaf",
+    begin: function () {},
+    finish: function () {},
+    handler: function (me, message) {
+        var x = sfprobeFBd2f (message.data);
+me.send ("out", x, message);
+
+
+    }
+}
+
+function probeFBd2f (container, instancename) {
+    let me = new Leaf (probeFBd2f_signature, probeFBd2f_protoImplementation, container, instancename);
+    return me;
+}
+
+
+
 var diagramparser_signature = {
     name: "diagramparser",
     inputs: [{name:"in", structure:["in"]}],
@@ -420,54 +447,56 @@ function whole_makechildren (container) {
         var child4 = new edge_containment_1 (container, "edge_containment_1");
         var child5 = new edge_containment_2 (container, "edge_containment_2");
         var child6 = new direct_containment (container, "direct_containment");
-        var child7 = new diagramparser (container, "diagramparser");
-        var child8 = new asfactbase (container, "asfactbase");
-        var child9 = new deleteblanklines (container, "deleteblanklines");
-        var child10 = new sortForPROLOG (container, "sortForPROLOG");
-        var child11 = new deleteTrailingSugar (container, "deleteTrailingSugar");
-        var child12 = new kickStart (container, "kickStart");
-        var child13 = new kinds (container, "kinds");
-        var child14 = new name (container, "name");
-        var child15 = new color (container, "color");
-        var child16 = new boundingbox (container, "boundingbox");
-        var child17 = new direction (container, "direction");
-        var child18 = new styleexpander (container, "styleexpander");
-        var child19 = new contains (container, "contains");
-        var child20 = new contains_port (container, "contains_port");
-        var child21 = new uncompress (container, "uncompress");
-        var child22 = new indirect_containment (container, "indirect_containment");
-        var child23 = new edge_containment_3 (container, "edge_containment_3");
-        var child24 = new sync_code (container, "sync_code");
-        var child25 = new connections (container, "connections");
-      var children = [ {name: "design_rule_edge_containment", runnable: child1}, {name: "prolog_convert_to_json", runnable: child2}, {name: "finish", runnable: child3}, {name: "edge_containment_1", runnable: child4}, {name: "edge_containment_2", runnable: child5}, {name: "direct_containment", runnable: child6}, {name: "diagramparser", runnable: child7}, {name: "asfactbase", runnable: child8}, {name: "deleteblanklines", runnable: child9}, {name: "sortForPROLOG", runnable: child10}, {name: "deleteTrailingSugar", runnable: child11}, {name: "kickStart", runnable: child12}, {name: "kinds", runnable: child13}, {name: "name", runnable: child14}, {name: "color", runnable: child15}, {name: "boundingbox", runnable: child16}, {name: "direction", runnable: child17}, {name: "styleexpander", runnable: child18}, {name: "contains", runnable: child19}, {name: "contains_port", runnable: child20}, {name: "uncompress", runnable: child21}, {name: "indirect_containment", runnable: child22}, {name: "edge_containment_3", runnable: child23}, {name: "sync_code", runnable: child24}, {name: "connections", runnable: child25} ];
+        var child7 = new probeFBd2f (container, "probeFBd2f");
+        var child8 = new diagramparser (container, "diagramparser");
+        var child9 = new asfactbase (container, "asfactbase");
+        var child10 = new deleteblanklines (container, "deleteblanklines");
+        var child11 = new sortForPROLOG (container, "sortForPROLOG");
+        var child12 = new deleteTrailingSugar (container, "deleteTrailingSugar");
+        var child13 = new kickStart (container, "kickStart");
+        var child14 = new kinds (container, "kinds");
+        var child15 = new name (container, "name");
+        var child16 = new color (container, "color");
+        var child17 = new boundingbox (container, "boundingbox");
+        var child18 = new direction (container, "direction");
+        var child19 = new styleexpander (container, "styleexpander");
+        var child20 = new contains (container, "contains");
+        var child21 = new contains_port (container, "contains_port");
+        var child22 = new uncompress (container, "uncompress");
+        var child23 = new indirect_containment (container, "indirect_containment");
+        var child24 = new edge_containment_3 (container, "edge_containment_3");
+        var child25 = new sync_code (container, "sync_code");
+        var child26 = new connections (container, "connections");
+      var children = [ {name: "design_rule_edge_containment", runnable: child1}, {name: "prolog_convert_to_json", runnable: child2}, {name: "finish", runnable: child3}, {name: "edge_containment_1", runnable: child4}, {name: "edge_containment_2", runnable: child5}, {name: "direct_containment", runnable: child6}, {name: "probeFBd2f", runnable: child7}, {name: "diagramparser", runnable: child8}, {name: "asfactbase", runnable: child9}, {name: "deleteblanklines", runnable: child10}, {name: "sortForPROLOG", runnable: child11}, {name: "deleteTrailingSugar", runnable: child12}, {name: "kickStart", runnable: child13}, {name: "kinds", runnable: child14}, {name: "name", runnable: child15}, {name: "color", runnable: child16}, {name: "boundingbox", runnable: child17}, {name: "direction", runnable: child18}, {name: "styleexpander", runnable: child19}, {name: "contains", runnable: child20}, {name: "contains_port", runnable: child21}, {name: "uncompress", runnable: child22}, {name: "indirect_containment", runnable: child23}, {name: "edge_containment_3", runnable: child24}, {name: "sync_code", runnable: child25}, {name: "connections", runnable: child26} ];
       return children;
 }
 
 function whole_makeconnections (container) {
-    var conn26 = {sender:{name: "uncompress", etag: "out"}, net: "NIY", receivers:  [{name: "diagramparser", etag: "in"}] };
-    var conn27 = {sender:{name: "prolog_convert_to_json", etag: "out"}, net: "NIY", receivers:  [{name: "finish", etag: "in"}] };
-    var conn28 = {sender:{name: "edge_containment_1", etag: "out"}, net: "NIY", receivers:  [{name: "edge_containment_2", etag: "in"}] };
-    var conn29 = {sender:{name: "edge_containment_2", etag: "out"}, net: "NIY", receivers:  [{name: "edge_containment_3", etag: "in"}] };
-    var conn30 = {sender:{name: "direct_containment", etag: "out"}, net: "NIY", receivers:  [{name: "edge_containment_1", etag: "in"}] };
-    var conn31 = {sender:{name: "diagramparser", etag: "out"}, net: "NIY", receivers:  [{name: "styleexpander", etag: "in"}] };
-    var conn32 = {sender:{name: "styleexpander", etag: "out"}, net: "NIY", receivers:  [{name: "asfactbase", etag: "in"}] };
-    var conn33 = {sender:{name: "asfactbase", etag: "out"}, net: "NIY", receivers:  [{name: "deleteblanklines", etag: "in"}] };
-    var conn34 = {sender:{name: "deleteblanklines", etag: "out"}, net: "NIY", receivers:  [{name: "sortForPROLOG", etag: "in"}] };
-    var conn35 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
-    var conn36 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
-    var conn37 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
-    var conn38 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
-    var conn39 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
-    var conn40 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
-    var conn41 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "direction", etag: "in"}] };
-    var conn42 = {sender:{name: "direction", etag: "out"}, net: "NIY", receivers:  [{name: "contains", etag: "in"}] };
-    var conn43 = {sender:{name: "contains", etag: "out"}, net: "NIY", receivers:  [{name: "contains_port", etag: "in"}] };
-    var conn44 = {sender:{name: "contains_port", etag: "out"}, net: "NIY", receivers:  [{name: "indirect_containment", etag: "in"}] };
-    var conn45 = {sender:{name: "indirect_containment", etag: "out"}, net: "NIY", receivers:  [{name: "direct_containment", etag: "in"}] };
-    var conn46 = {sender:{name: "edge_containment_3", etag: "out"}, net: "NIY", receivers:  [{name: "sync_code", etag: "in"}] };
-    var conn47 = {sender:{name: "sync_code", etag: "out"}, net: "NIY", receivers:  [{name: "connections", etag: "in"}] };
-    var conn48 = {sender:{name: "connections", etag: "out"}, net: "NIY", receivers:  [{name: "prolog_convert_to_json", etag: "in"}] };
-    var connections = [ conn26, conn27, conn28, conn29, conn30, conn31, conn32, conn33, conn34, conn35, conn36, conn37, conn38, conn39, conn40, conn41, conn42, conn43, conn44, conn45, conn46, conn47, conn48 ];
+    var conn27 = {sender:{name: "uncompress", etag: "out"}, net: "NIY", receivers:  [{name: "diagramparser", etag: "in"}] };
+    var conn28 = {sender:{name: "prolog_convert_to_json", etag: "out"}, net: "NIY", receivers:  [{name: "finish", etag: "in"}] };
+    var conn29 = {sender:{name: "edge_containment_1", etag: "out"}, net: "NIY", receivers:  [{name: "edge_containment_2", etag: "in"}] };
+    var conn30 = {sender:{name: "edge_containment_2", etag: "out"}, net: "NIY", receivers:  [{name: "edge_containment_3", etag: "in"}] };
+    var conn31 = {sender:{name: "direct_containment", etag: "out"}, net: "NIY", receivers:  [{name: "edge_containment_1", etag: "in"}] };
+    var conn32 = {sender:{name: "probeFBd2f", etag: "out"}, net: "NIY", receivers:  [{name: "kinds", etag: "in"}] };
+    var conn33 = {sender:{name: "diagramparser", etag: "out"}, net: "NIY", receivers:  [{name: "styleexpander", etag: "in"}] };
+    var conn34 = {sender:{name: "styleexpander", etag: "out"}, net: "NIY", receivers:  [{name: "asfactbase", etag: "in"}] };
+    var conn35 = {sender:{name: "asfactbase", etag: "out"}, net: "NIY", receivers:  [{name: "deleteblanklines", etag: "in"}] };
+    var conn36 = {sender:{name: "deleteblanklines", etag: "out"}, net: "NIY", receivers:  [{name: "sortForPROLOG", etag: "in"}] };
+    var conn37 = {sender:{name: "sortForPROLOG", etag: "out"}, net: "NIY", receivers:  [{name: "deleteTrailingSugar", etag: "in"}] };
+    var conn38 = {sender:{name: "kickStart", etag: "out"}, net: "NIY", receivers:  [{name: "uncompress", etag: "in"}] };
+    var conn39 = {sender:{name: "deleteTrailingSugar", etag: "out"}, net: "NIY", receivers:  [{name: "probeFBd2f", etag: "in"}] };
+    var conn40 = {sender:{name: "kinds", etag: "out"}, net: "NIY", receivers:  [{name: "name", etag: "in"}] };
+    var conn41 = {sender:{name: "name", etag: "out"}, net: "NIY", receivers:  [{name: "color", etag: "in"}] };
+    var conn42 = {sender:{name: "color", etag: "out"}, net: "NIY", receivers:  [{name: "boundingbox", etag: "in"}] };
+    var conn43 = {sender:{name: "boundingbox", etag: "out"}, net: "NIY", receivers:  [{name: "direction", etag: "in"}] };
+    var conn44 = {sender:{name: "direction", etag: "out"}, net: "NIY", receivers:  [{name: "contains", etag: "in"}] };
+    var conn45 = {sender:{name: "contains", etag: "out"}, net: "NIY", receivers:  [{name: "contains_port", etag: "in"}] };
+    var conn46 = {sender:{name: "contains_port", etag: "out"}, net: "NIY", receivers:  [{name: "indirect_containment", etag: "in"}] };
+    var conn47 = {sender:{name: "indirect_containment", etag: "out"}, net: "NIY", receivers:  [{name: "direct_containment", etag: "in"}] };
+    var conn48 = {sender:{name: "edge_containment_3", etag: "out"}, net: "NIY", receivers:  [{name: "sync_code", etag: "in"}] };
+    var conn49 = {sender:{name: "sync_code", etag: "out"}, net: "NIY", receivers:  [{name: "connections", etag: "in"}] };
+    var conn50 = {sender:{name: "connections", etag: "out"}, net: "NIY", receivers:  [{name: "prolog_convert_to_json", etag: "in"}] };
+    var connections = [ conn27, conn28, conn29, conn30, conn31, conn32, conn33, conn34, conn35, conn36, conn37, conn38, conn39, conn40, conn41, conn42, conn43, conn44, conn45, conn46, conn47, conn48, conn49, conn50 ];
     return connections;
 }
 

@@ -36,8 +36,8 @@ main.js: pre.js cos.js d2f.js funcs.js post.js parser.js
 	cat pre.js cos.js d2f.js funcs.js parser.js post.js >d2jsonmain.js
 
 queries:
-	(cd das2f ; make build)
-	(cd das2j ; make layercomponent_query.bash)
+	(cd das2f ; make)
+	(cd das2j ; make)
 
 clean:
 	rm -f d2f.json d2f.js main.js
