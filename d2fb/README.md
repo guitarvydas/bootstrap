@@ -77,3 +77,7 @@ $
 			- conclusion: funcs.js/sfdeleteblanklines leaves leading 12 spaces at front -> ignore for now
 
 		- obs: now, tempfb's differ by ~1,000 bytes
+		
+		- expt: replace edgecontainment{1,2,3} with edgecontainment_new
+		- result: testbench.json is the same as boot/das2json except for 1 newline
+		
