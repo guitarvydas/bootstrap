@@ -65,7 +65,8 @@ function sfreadfile (fname) {
 function sfprolog2json (fb) {
     fs.writeFileSync ('tempfb.pl', fb);
     console.error ('tempfb.pl written');
-    return query (fb, jsondir, 'layercomponent_query.bash');
+    var _out = query (fb, jsondir, 'layercomponent_query.bash');
+    console.log (_out);
 }
 
 function query (fb, dir, script) {
@@ -82,7 +83,6 @@ function query (fb, dir, script) {
     fs.writeFileSync ('fb.pl', fb);
 
     var _newfacts = execSync (dir + script).toString ();
-    console.error (_newfacts);
     return _newfacts;
 }
 
