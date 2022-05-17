@@ -65,7 +65,8 @@ function sfreadfile (fname) {
 function sfprolog2json (fb) {
     fs.writeFileSync ('tempfb.pl', fb);
     console.error ('tempfb.pl written');
-    return query (fb, jsondir, 'layercomponent_query.bash');
+    var _out = query (fb, jsondir, 'layercomponent_query.bash');
+    console.log (_out);
 }
 
 function query (fb, dir, script) {
@@ -173,4 +174,10 @@ function sfdesignruleedgecontainment (fb) {
 
 function done () {
     console.error ('whole done');
+}
+
+function sfprobeFBd2f (fb) {
+    console.error ('sfprobeFBd2f');
+    fs.writeFileSync ('fbd2f.pl', fb);
+    return fb;
 }

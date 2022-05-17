@@ -69,6 +69,17 @@
     {
       "children": [],
       "connections": [],
+      "id":"cell_128",
+      "inputs": ["in" ],
+      "name":"probeFBd2f",
+      "outputs": ["out" ],
+      "synccode":"var x = sfprobeFBd2f (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
       "id":"cell_13",
       "inputs": ["in" ],
       "name":"diagramparser",
@@ -173,6 +184,7 @@
 	"edge_containment_1",
 	"edge_containment_2",
 	"direct_containment",
+	"probeFBd2f",
 	"diagramparser",
 	"asfactbase",
 	"deleteblanklines",
@@ -215,6 +227,10 @@
 	  "senders": [ {"sender": {"component":"direct_containment", "port":"out"}} ]
 	},
 	{
+	  "receivers": [ {"receiver": {"component":"kinds", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"probeFBd2f", "port":"out"}} ]
+	},
+	{
 	  "receivers": [ {"receiver": {"component":"styleexpander", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"diagramparser", "port":"out"}} ]
 	},
@@ -239,7 +255,7 @@
 	  "senders": [ {"sender": {"component":"kickStart", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"kinds", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"probeFBd2f", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"deleteTrailingSugar", "port":"out"}} ]
 	},
 	{
