@@ -7,7 +7,9 @@ support=--support=${cwd}/support.js
 all: clean queries main.js
 #	node main.js d2f.drawio
 #	./d2f d2f.drawio
-	./d2json d2f.drawio
+
+#	./d2json d2f.drawio
+	./d2json testbench.drawio
 
 main: main.js
 	node main.js d2f.drawio
