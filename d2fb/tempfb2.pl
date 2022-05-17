@@ -477,7 +477,6 @@ das_fact(kind,cell_6,rectangle).
 das_fact(kind,cell_7,rectangle).
 das_fact(kind,cell_8,edge).
 das_fact(kind,cell_9,ellipse).
-
 das_fact(name, cell_11, "phrase").
 das_fact(name, cell_12, "HTML Button").
 das_fact(name, cell_14, "click").
@@ -497,7 +496,6 @@ das_fact(name, cell_31, "&lt;div&gt;&amp;nbsp; &amp;nbsp; me.send (&quot;long ph
 das_fact(name, cell_6, "Test Bench").
 das_fact(name, cell_7, "Order Taker").
 das_fact(name, cell_9, "food order").
-
 das_fact(color,cell_10,"-").
 das_fact(color,cell_11,"green").
 das_fact(color,cell_12,"-").
@@ -526,7 +524,6 @@ das_fact(color,cell_6,"-").
 das_fact(color,cell_7,"-").
 das_fact(color,cell_8,"-").
 das_fact(color,cell_9,"yellow").
-
 das_fact(bbL,cell_11,810).
   das_fact(bbT,cell_11,-650).
   das_fact(bbR,cell_11,850).
@@ -603,7 +600,6 @@ das_fact(bbL,cell_9,1140).
   das_fact(bbT,cell_9,-650).
   das_fact(bbR,cell_9,1180).
   das_fact(bbB,cell_9,-610).
-
 das_fact(direction,cell_11,input).
 das_fact(direction,cell_14,output).
 das_fact(direction,cell_17,output).
@@ -616,7 +612,6 @@ das_fact(direction,cell_27,output).
 das_fact(direction,cell_28,output).
 das_fact(direction,cell_29,output).
 das_fact(direction,cell_9,output).
-
 das_fact(contains,cell_6,cell_11).
 das_fact(contains,cell_6,cell_12).
 das_fact(contains,cell_6,cell_14).
@@ -642,7 +637,6 @@ das_fact(contains,cell_15,cell_31).
 das_fact(contains,cell_6,cell_31).
 das_fact(contains,cell_6,cell_7).
 das_fact(contains,cell_6,cell_9).
-
 das_fact(contains,cell_12,cell_14).
 das_fact(contains,cell_15,cell_17).
 das_fact(contains,cell_15,cell_19).
@@ -655,7 +649,6 @@ das_fact(contains,cell_22,cell_29).
 das_fact(contains,cell_6,cell_21).
 das_fact(contains,cell_7,cell_11).
 das_fact(contains,cell_7,cell_9).
-
 das_fact(indirect_contains,cell_6,cell_30).
 das_fact(indirect_contains,cell_6,cell_14).
 das_fact(indirect_contains,cell_6,cell_31).
@@ -680,7 +673,6 @@ das_fact(indirect_contains,cell_6,cell_28).
 das_fact(indirect_contains,cell_6,cell_29).
 das_fact(indirect_contains,cell_6,cell_11).
 das_fact(indirect_contains,cell_6,cell_9).
-
 das_fact(direct_contains,cell_12,cell_14).
 das_fact(direct_contains,cell_12,cell_30).
 das_fact(direct_contains,cell_15,cell_17).
@@ -699,7 +691,6 @@ das_fact(direct_contains,cell_6,cell_7).
 das_fact(direct_contains,cell_7,cell_11).
 das_fact(direct_contains,cell_7,cell_22).
 das_fact(direct_contains,cell_7,cell_9).
-
 das_fact(direct_contains,cell_6,cell_13).
 das_fact(direct_contains,cell_6,cell_16).
 das_fact(direct_contains,cell_6,cell_18).
@@ -707,10 +698,8 @@ das_fact(direct_contains,cell_7,cell_23).
 das_fact(direct_contains,cell_7,cell_26).
 das_fact(direct_contains,cell_6,cell_8).
 das_fact(direct_contains,cell_7,cell_10).
-
 das_fact(codebox,cell_30,"me.send (&quot;click&quot;, true);").
 das_fact(codebox,cell_31,"&lt;div&gt;&amp;nbsp; &amp;nbsp; me.send (&quot;long phrase&quot;, &quot;I Want A Hamburger With Ketchup And Bacon And Pickles&quot;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;").
-
 das_fact(connection, cell_7, cell_10).
 das_fact(sender, cell_10, sender{component:"Order Taker",port:"phrase"}).
 das_fact(receiver, cell_10, receiver{component:"Phrase Parser",port:"phrase"}).

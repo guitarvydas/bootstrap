@@ -132,13 +132,16 @@ function sfcontainsport (fb) {
 function sfindirectcontainment (fb) {
     console.error ('indirect containment');
     return queryAndExtendFB (fb, 'layer5_query.bash');
-    return fb;
 }
 
 function sfdirectcontainment (fb) {
     console.error ('direct containment');
     return queryAndExtendFB (fb, 'layer6_query.bash');
-    return fb;
+}
+
+function sfedgecontainment_new (fb) {
+    console.error ('edge containment new');
+    return queryAndExtendFB (fb, 'edgecontainment.bash');
 }
 
 function sfedgecontainment1 (fb) {
@@ -178,6 +181,6 @@ function done () {
 
 function sfprobeFBd2f (fb) {
     console.error ('sfprobeFBd2f');
-    fs.writeFileSync ('fbd2f.pl', fb);
+    fs.writeFileSync ('probe-fbd2f.pl', fb + '\n');
     return fb;
 }
