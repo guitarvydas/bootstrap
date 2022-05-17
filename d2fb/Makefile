@@ -9,6 +9,7 @@ all: clean queries main.js
 #	./d2f d2f.drawio
 
 #	./d2json d2f.drawio
+	cp boot/das2json/testbench.drawio .
 	./d2json testbench.drawio >testbench.json
 	(cd boot/das2json ; make testbench.json)
 	diff testbench.json boot/das2json/testbench.json

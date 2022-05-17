@@ -56,3 +56,24 @@ $
 			- output from d2f is slightly different from boot/das2json
 				- -785 vs -780
 				- No newline
+			- theory: testbench.drawio is different in both cases
+				- expt: re-copy testbench.drawio from boot/das2json and re-make
+			- obs: 
+				- fixed: `diagram_fact(y, cell_6, -780)`
+				- not fixed: No newline
+			- add + '\n' -- fixes No newline
+			- obs: d2f files differ by 12 bytes
+```
+Files probe-fbd2f.pl and boot/das2json/probe-fbd2f-boot.pl differ
+-rw-r--r--  1 tarvydas  staff  18002 17 May 08:47 boot/das2json/probe-fbd2f-boot.pl
+-rw-r--r--  1 tarvydas  staff  18014 17 May 08:47 probe-fbd2f.pl
+1d0
+<            
+     451    1381   18014 probe-fbd2f.pl
+     450    1381   18002 boot/das2json/probe-fbd2f-boot.pl
+     901    2762   36016 total
+$ 
+```
+			- conclusion: funcs.js/sfdeleteblanklines leaves leading 12 spaces at front -> ignore for now
+
+		- obs: now, tempfb's differ by ~1,000 bytes

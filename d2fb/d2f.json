@@ -3,18 +3,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_101",
-      "inputs": ["in" ],
-      "name":"design_rule_edge_containment",
-      "outputs": ["out" ],
-      "synccode":"var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
-    }
-  ],
-  [
-    {
-      "children": [],
-      "connections": [],
-      "id":"cell_105",
+      "id":"cell_100",
       "inputs": ["in" ],
       "name":"prolog_convert_to_json",
       "outputs": ["out" ],
@@ -25,7 +14,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_108",
+      "id":"cell_103",
       "inputs": ["in" ],
       "name":"finish",
       "outputs": [],
@@ -36,29 +25,18 @@
     {
       "children": [],
       "connections": [],
+      "id":"cell_108",
+      "inputs": ["in" ],
+      "name":"edge_containment_new",
+      "outputs": ["out" ],
+      "synccode":"var x = sfedgecontainment_new (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
       "id":"cell_113",
-      "inputs": ["in" ],
-      "name":"edge_containment_1",
-      "outputs": ["out" ],
-      "synccode":"var x = sfedgecontainment1 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
-    }
-  ],
-  [
-    {
-      "children": [],
-      "connections": [],
-      "id":"cell_118",
-      "inputs": ["in" ],
-      "name":"edge_containment_2",
-      "outputs": ["out" ],
-      "synccode":"var x = sfedgecontainment2 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
-    }
-  ],
-  [
-    {
-      "children": [],
-      "connections": [],
-      "id":"cell_123",
       "inputs": ["in" ],
       "name":"direct_containment",
       "outputs": ["out" ],
@@ -69,7 +47,7 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_128",
+      "id":"cell_118",
       "inputs": ["in" ],
       "name":"probeFBd2f",
       "outputs": ["out" ],
@@ -178,11 +156,9 @@
   [
     {
       "children": [
-	"design_rule_edge_containment",
 	"prolog_convert_to_json",
 	"finish",
-	"edge_containment_1",
-	"edge_containment_2",
+	"edge_containment_new",
 	"direct_containment",
 	"probeFBd2f",
 	"diagramparser",
@@ -201,9 +177,9 @@
 	"contains_port",
 	"uncompress",
 	"indirect_containment",
-	"edge_containment_3",
 	"sync_code",
-	"connections"
+	"connections",
+	"design_rule_edge_containment"
       ],
       "connections": [
 	{
@@ -215,15 +191,11 @@
 	  "senders": [ {"sender": {"component":"prolog_convert_to_json", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"edge_containment_2", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"edge_containment_1", "port":"out"}} ]
+	  "receivers": [ {"receiver": {"component":"sync_code", "port":"in"}} ],
+	  "senders": [ {"sender": {"component":"edge_containment_new", "port":"out"}} ]
 	},
 	{
-	  "receivers": [ {"receiver": {"component":"edge_containment_3", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"edge_containment_2", "port":"out"}} ]
-	},
-	{
-	  "receivers": [ {"receiver": {"component":"edge_containment_1", "port":"in"}} ],
+	  "receivers": [ {"receiver": {"component":"edge_containment_new", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"direct_containment", "port":"out"}} ]
 	},
 	{
@@ -289,10 +261,6 @@
 	{
 	  "receivers": [ {"receiver": {"component":"direct_containment", "port":"in"}} ],
 	  "senders": [ {"sender": {"component":"indirect_containment", "port":"out"}} ]
-	},
-	{
-	  "receivers": [ {"receiver": {"component":"sync_code", "port":"in"}} ],
-	  "senders": [ {"sender": {"component":"edge_containment_3", "port":"out"}} ]
 	},
 	{
 	  "receivers": [ {"receiver": {"component":"connections", "port":"in"}} ],
@@ -393,17 +361,6 @@
       "connections": [],
       "id":"cell_86",
       "inputs": ["in" ],
-      "name":"edge_containment_3",
-      "outputs": ["out" ],
-      "synccode":"var x = sfedgecontainment3 (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
-    }
-  ],
-  [
-    {
-      "children": [],
-      "connections": [],
-      "id":"cell_91",
-      "inputs": ["in" ],
       "name":"sync_code",
       "outputs": ["out" ],
       "synccode":"var x = sfsynccode (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
@@ -413,11 +370,22 @@
     {
       "children": [],
       "connections": [],
-      "id":"cell_96",
+      "id":"cell_91",
       "inputs": ["in" ],
       "name":"connections",
       "outputs": ["out" ],
       "synccode":"var x = sfconnections (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
+    }
+  ],
+  [
+    {
+      "children": [],
+      "connections": [],
+      "id":"cell_96",
+      "inputs": ["in" ],
+      "name":"design_rule_edge_containment",
+      "outputs": ["out" ],
+      "synccode":"var x = sfdesignruleedgecontainment (message.data);&lt;br&gt;me.send (&quot;out&quot;, x, message);&lt;br&gt;&lt;div&gt;&lt;/div&gt;"
     }
   ]
 ]

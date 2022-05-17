@@ -446,7 +446,7 @@ diagram_fact(y, cell_28, -570).
 diagram_fact(y, cell_29, -570).
 diagram_fact(y, cell_30, -635).
 diagram_fact(y, cell_31, -635).
-diagram_fact(y, cell_6, -785).
+diagram_fact(y, cell_6, -780).
 diagram_fact(y, cell_7, -735).
 diagram_fact(y, cell_9, -650).
 das_fact(kind,cell_10,edge).
@@ -592,9 +592,9 @@ das_fact(bbL,cell_31,385).
   das_fact(bbR,cell_31,655).
   das_fact(bbB,cell_31,-575).
 das_fact(bbL,cell_6,40).
-  das_fact(bbT,cell_6,-785).
+  das_fact(bbT,cell_6,-780).
   das_fact(bbR,cell_6,1230).
-  das_fact(bbB,cell_6,-475).
+  das_fact(bbB,cell_6,-470).
 das_fact(bbL,cell_7,830).
   das_fact(bbT,cell_7,-735).
   das_fact(bbR,cell_7,1160).
@@ -700,26 +700,17 @@ das_fact(direct_contains,cell_7,cell_11).
 das_fact(direct_contains,cell_7,cell_22).
 das_fact(direct_contains,cell_7,cell_9).
 
-das_fact(direct_contains,cell_6,cell_10).
 das_fact(direct_contains,cell_6,cell_13).
 das_fact(direct_contains,cell_6,cell_16).
 das_fact(direct_contains,cell_6,cell_18).
 das_fact(direct_contains,cell_7,cell_23).
 das_fact(direct_contains,cell_7,cell_26).
 das_fact(direct_contains,cell_6,cell_8).
-
 das_fact(direct_contains,cell_7,cell_10).
-
-das_fact(direct_contains,cell_7,cell_23).
-das_fact(direct_contains,cell_7,cell_26).
-das_fact(direct_contains,cell_6,cell_8).
 
 das_fact(codebox,cell_30,"me.send (&quot;click&quot;, true);").
 das_fact(codebox,cell_31,"&lt;div&gt;&amp;nbsp; &amp;nbsp; me.send (&quot;long phrase&quot;, &quot;I Want A Hamburger With Ketchup And Bacon And Pickles&quot;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;").
 
-das_fact(connection, cell_6, cell_10).
-das_fact(sender, cell_10, sender{component:"Order Taker",port:"phrase"}).
-das_fact(receiver, cell_10, receiver{component:"Phrase Parser",port:"phrase"}).
 das_fact(connection, cell_7, cell_10).
 das_fact(sender, cell_10, sender{component:"Order Taker",port:"phrase"}).
 das_fact(receiver, cell_10, receiver{component:"Phrase Parser",port:"phrase"}).
@@ -735,18 +726,9 @@ das_fact(receiver, cell_18, receiver{component:"Order Taker",port:"phrase"}).
 das_fact(connection, cell_7, cell_23).
 das_fact(sender, cell_23, sender{component:"Phrase Parser",port:"order no choices"}).
 das_fact(receiver, cell_23, receiver{component:"Order Taker",port:"food order"}).
-das_fact(connection, cell_7, cell_23).
-das_fact(sender, cell_23, sender{component:"Phrase Parser",port:"order no choices"}).
-das_fact(receiver, cell_23, receiver{component:"Order Taker",port:"food order"}).
 das_fact(connection, cell_7, cell_26).
 das_fact(sender, cell_26, sender{component:"Phrase Parser",port:"order with choices"}).
 das_fact(receiver, cell_26, receiver{component:"Order Taker",port:"food order"}).
-das_fact(connection, cell_7, cell_26).
-das_fact(sender, cell_26, sender{component:"Phrase Parser",port:"order with choices"}).
-das_fact(receiver, cell_26, receiver{component:"Order Taker",port:"food order"}).
-das_fact(connection, cell_6, cell_8).
-das_fact(sender, cell_8, sender{component:"Order Taker",port:"food order"}).
-das_fact(receiver, cell_8, receiver{component:"Test Bench",port:"food order"}).
 das_fact(connection, cell_6, cell_8).
 das_fact(sender, cell_8, sender{component:"Order Taker",port:"food order"}).
 das_fact(receiver, cell_8, receiver{component:"Test Bench",port:"food order"}).
